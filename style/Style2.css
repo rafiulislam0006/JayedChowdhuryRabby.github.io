@@ -1,0 +1,708 @@
+/* css for home page */
+*{
+  font-weight: 550;
+}
+.navbar navbar-expand-lg navbar-light bg-light{
+  width: fit-content ;
+}
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+    margin: auto;
+
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .firstsec{
+    padding-bottom: 200px;
+    color: rgb(63, 61, 61);
+    font-weight: 700;
+
+  }
+  /* for changing herosections sub p short */
+  .herosec{
+    font-weight: 200;
+  }
+  .or{
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #ec5008;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #f06220;
+  border: none;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  
+
+  }
+  .or:hover, .or:focus, or:active{
+    box-shadow: 0 0 20px #da6027;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  <!--card-->
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(119, 0, 0, 0.2);
+    background-color: #fff;
+    padding-top: 200px;
+    
+    
+  }
+  .card{
+    border-radius: 25px;
+    width: 250px;
+    height: 29rem;
+  }
+  
+  .card img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+    background-color:rgb(246, 144, 140);
+  }
+  
+  .card h3 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    color: orangered;
+    font: weight 300px;
+  }
+  
+  .card p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: orangered;
+    line-height: 1.5;
+    padding: 0 20px;
+  }
+  .thirdsec{
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  .stu{
+    font-weight: normal;
+    color: tomato;
+    
+  }
+  .btn{
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #da279e;
+    color: #fff;
+    font-size: 16px;
+    
+  }
+  .fourthsec{
+    padding: 200px 0px 200px;
+    color: #ec2f84;
+  }
+   .sixthsec{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    color: #da279e;
+   }
+   .sevensec{
+    background-color:rgb(250, 223, 232);
+    padding: 20px;
+    text-align: center;
+    color: #6b6a6b;
+    
+   }
+   .sevensec .container{
+    margin: 10px black;
+    padding-top: 10px;
+   }
+   .eightsec{
+    padding: 200px;
+    color: #ec2f84;
+   }
+   .eightsec .text-center{
+    color: #f32ca0;
+    font-weight: 600;
+   }
+   
+/* ---------------css for home page ---------------*/
+
+/*---------------- CSS FOR STUDENT PAGE------------- */
+.frstsec{
+  position: relative;
+  background-image: url(/style/student-pg/Path\ 12@2x.png);
+  background-size: cover;
+  color: whitesmoke;
+}
+.frstsec button{
+  padding: 20px 40px 20px 40px;
+  color: white;
+  box-shadow: 2px 2px 1px 2px #6b6a6b;
+}
+/* card body css */
+.sndsect{
+  margin: 100px 0 100px;
+  color:#f8356ced ;
+}
+@media screen and (max-width: 768px) {
+  .card-body {
+    width: calc(50% - 10px); /* Adjust the width and spacing for smaller screens */
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-body {
+    width: 100%; /* Adjust the width for the smallest screens */
+    margin-right: 0;
+  }
+}
+
+.sndsect h2{
+  font-family: cursive ;
+}
+ .card-body{
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0 20px;
+  border-radius: 20px;
+  padding: 26px 117px 117px 112px;
+ }
+ .sndsect .card-body:last-child {
+  margin-right: 0; /* Remove the margin on the last card to avoid extra space */
+}
+.sndsect .cards{
+  margin: 40px;
+  padding: 20px 5px;
+  box-shadow: 0 2px 5px rgb(42, 41, 41);
+  border-radius: 5%;
+  color: #f61010;
+  overflow: hidden;
+ }
+ .cards p{
+  height: 92px;
+  width: fit-content;
+  color: #da6027; 
+ }
+ 
+/* card body css */
+/* CSS FOR STEPS */
+.step1{
+  margin: 100px;
+}
+.step1 .col-md-6{
+  text-align: left;
+ }
+ .step2{
+  margin: 100px;
+ }
+ .step2 .col-md-6{
+  text-align: right;
+ }
+ .step3{
+  margin: 100px;
+ }
+ .step3 .col-md-6{
+  text-align: left;
+ }
+ .step4{
+  margin: 100px;
+ }
+ .step4 .col-md-6{
+  text-align: right;
+ }
+ .step5{
+  margin: 100px;
+ }
+ .step5 .col-md-6{
+  text-align: left;
+ }
+ .steps{
+  background-color: #fad3cc;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 25px;
+ }
+ .steps h2{
+  font-size: 45px;
+ }
+ .head{
+  color: #f32ca0;
+ }
+/* CSS FOR STEPS Ends here */
+.cads{
+  padding: 17px 17px;
+  box-shadow: 0 2px 5px rgb(42, 41, 41);
+  border-radius: 2px;
+  background-color: #fdd3cc
+}
+.forsect .card-body{
+ margin: 67px;
+ display: flex;
+ justify-content: center;
+}
+/* fifth section card Css */
+.fivesec .col-md-3{
+  font-size: 0.67em;
+}
+.fivesec .box h2{
+  font-size: 1rem;
+}
+.fivesec .box{
+  padding: 7px;
+  box-shadow: 2px 5px 5px 0px;
+  height: 450px;
+  overflow: hidden;
+}
+.fivesec .card-body{
+ padding-bottom: 40px;
+}
+.fivesec{
+  margin: 40px 0px;
+}
+/* fifth section card css */
+/* Sixth section CSS */
+.sixsec{
+  margin: 40px 0px;
+  margin-top:100px ;
+}
+.sixsec .box{
+  padding: 14px;
+  box-shadow: 2px 5px 5px 0px;
+  height: 400px;
+  overflow: hidden;
+}
+.sixsec .row{
+  display: flex;
+  justify-content: space-around;
+}
+.sixsec .col-md-2{
+  font-size: 0.67em;
+  padding: 0px;
+}
+.sixsec .box h2{
+  font-size: 1rem;
+}
+/* sixth section css end here */
+/* 7th sections starts here */
+.cardbody .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 70px;
+}
+.cardbody .col{
+  padding: 0px;
+}
+.cardbody .card{
+  overflow: hidden;
+  font-size: smaller;
+  border-radius: 0px;
+  text-align: left;
+  box-shadow: 0px 5px 5px;
+}
+.cardbody .card h2{
+  font-size: 1rem;
+  text-align: left;
+  padding: 10px;
+}
+.cardbody .card p{
+  color: #414041ed;
+  font-size: small;
+  text-align: left;
+}
+/* 7th section starts here */
+.lstsec{
+  position: relative;
+  background-image: url(/style/student-pg/Path\ 12@2x.png);
+  background-size: cover;
+  color: white;
+}
+.lstsec .row{
+  padding: 62px;
+}
+/* ----------------css for student page end here--------- */
+/*---------------- CSS FOR SCHOOL PAGE--------------- */
+.herosect{
+  position: relative;
+  background-image: url("/style/school/Component\ 1\ –\ 1@2x.png");
+  background-size: cover;
+  color: white;
+  padding: 70px 0px;
+}
+.herosect .row{
+  padding: 65px 0px;
+}
+.herosect .text{
+  text-align: center;
+  margin: 0px;
+}
+.expand{
+  margin: 75px 20px;
+  padding: 40px 0px;
+}
+.expand .container-fluid{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+.expand .card{
+  width: 100%;
+  height: 124px;
+  border-radius: 0px;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0.5px 4px 4px 0.5px #e196ba;
+}
+.expand .card p{
+  color: #686768;
+}
+.pink{
+  color: #ec2f84;
+}
+@media (max-width: 768px) {
+  .card-body p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .card-body p {
+    font-size: 12px;
+  }
+}
+.benefit .col-md-7{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.benefit{
+  margin: 70px;
+  padding: 30px;
+  overflow: hidden;
+}
+.benefit p{
+  margin: 0px 120px;
+}
+.partnership {
+  position: relative;
+  background-image: url(/style/school/Path\ 16.png); 
+  background-size: cover;
+  color: white;
+
+}
+/* REQUEST FORM */
+.request-form {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+}
+.basic-info form{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.contact-info .col-md-6{
+  padding: 0px 0px;
+  margin: 0px;
+  font-size: small;
+}
+.partnership .request-board{
+  font-size: xx-small;
+  padding: 40px;
+  font-size: 14px;
+}
+.partnership .col-md-7{
+  display: flex;
+}
+.comments .cads{
+  width: 975px;
+  background-color: #f6e1df;
+  box-shadow: 0px 5px 20px 0px black;
+}
+.comments .card-body{
+  margin: 60px 60px 30px 60px;
+  display: flex;
+  justify-content: center;
+ }
+ .seminarwebinar .card-bdy{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px;
+    border-radius: 20px;
+    padding-bottom: 40px;
+}
+.seminarwebinar .cads{
+  padding: 25px 250px;
+  margin: 0px;
+  background-color: palevioletred;
+}
+.seminarwebinar .cads button{
+  border-radius: 18px;
+  padding: 0px 48px;
+  border: white;
+}
+.seminarwebinar .cads button a{
+  color: #f32ca0;
+}
+.bcmpartnr{
+  position: relative;
+  background-image: url(/style/school/Component\ 1\ –\ 1@2x.png);
+  background-size: cover;
+  margin: 0px;
+  font-size: xx-large;
+  color: #faf8f8;
+}
+.bcmpartnr .bttn{
+  border: white;
+  border-radius: 10px;
+  padding: 10px;
+  color: #ec2f84;
+}
+/* REQUEST FORM */
+.termsofuse {
+  padding: 50px 100px 100px 100px;
+  text-align: justify;
+  font-family:Arial, Helvetica, sans-serif;
+  color: #6b6a6b;
+}
+.headertermsofuse{
+  padding: 98px 98px 0px 98px ;
+}
+.termsofuse p a{
+  color: #f32ca0;
+}
+/*--------------------- CSS FOR SCHOOL PAGE------------*/
+/* ----------------------Css For RECRUIT---------- */
+.applyboardworks{
+  position: relative;
+  background-image: url("/style/New\ folder/Rectangle 66.png ") ;
+  background-size: cover;
+  padding: 40px 40px;
+}
+.ourimpact{
+  padding: 100px 0px 70px 0px;
+}
+.ourimpact .row{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+.applyboardworks{
+  position: relative;
+  background-color: #FEEBEC;
+  background-size:contain;
+  color: rgb(104, 102, 102);
+  padding: 100px 0px;
+}
+.joinpartner{
+  position: relative;
+  background-image: url("/style/Newfolder/Path\ 17@2x.png") ;
+  background-size:contain;
+  color: white;
+  padding: 100px 0px;
+}
+.workwidapply{
+  padding: 100px 0px;
+  background-color: #FEEEEF;
+}
+.eventsandweb .content{
+  text-align: center;
+  box-shadow: 0px 5px 5px 0px #FE1970;
+  background-color: #FE4388;
+  padding: 40px;
+}
+.eventsandweb{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200px;
+}
+.eventsandweb .content button{
+  border-color: #f6e1df;
+  border-radius: 15px;
+  padding: 0px 10px;
+}
+.hlpusedu{
+  position: relative;
+  background-image: url("/style/Newfolder/Path\ 17@2x.png");
+  background-size: auto;
+}
+.hlpusedu button{
+  border-color: wheat;
+  border-radius: 10px;
+  padding: 0px 5px;
+}
+body {
+  overflow-x: hidden;
+}
+.sevensec{
+  padding-top: 50px;
+}
+
+/* ----------------------Css For RECRUIT ENDS---------- */
+/* terms and condition page */
+.termsandcondition{
+  padding: 100px 150px 150px 150px;
+}
+.termsandcondition .content{
+  padding-top: 50px   ;
+  text-align: justify;
+}
+/* terms and condition page ends here */
+
+/* -----  learn how to Web page starts here */
+  .howwework{
+    position: relative;
+    background-image: url(/style/Newfolder/Path\ 12@2x.png);
+    background-size: contain;
+    text-align: left;
+    padding: 170px;
+  }
+  .howwework .content{
+    text-align: justify;
+    color: #f6e1df;
+  }
+  .fiveSteps{
+    padding: 100px 300px 200px 100px ;
+  }
+  .fiveSteps p{
+    padding-right: 485px;
+    text-align: justify;
+  }
+  .fiveSteps .step{
+    padding-top: 50px;
+  }
+  .fiveSteps .step h3{
+    font-weight: 700;
+  }
+  .bcmrecRutmentPartnr{
+    position: relative;
+    background-image: url(/style/Newfolder/17.png);
+    background-size: contain;
+    padding: 150px;
+    color: #f6e1df;
+  }
+  .bcmrecRutmentPartnr button{
+    color: #ec2f84;
+    background-color: #f5edec;
+    border-color: whitesmoke;
+    padding: 7px 15px;
+    font-size: larger;
+    border-radius: 20px;
+    margin-top: 50px;
+    border: none;
+    /* box-shadow: 0px 3px 3px 0px #fffdff; */
+  }
+  
+/* -----  learn how to Web page ends here */
+/* Cookie policy page Starts here */
+.cookie-policy{
+  padding: 50px 250px 40px 100px;
+  text-align: justify;
+ }
+ /* Cookie policy page Ends here */
+
+ /* -------STUDENT SUCCESS STORY BEGIN HERE------ */
+ .SuccessStory{
+  padding: 100px;
+  background-color: #FEE3E0;
+  color: #FD4481;
+ }
+ .studentstories .col-md-6 .box{
+  border: 1px solid white;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px #b2a9a7;
+  margin: 20px;
+  text-align: justify;
+  padding: 20px;
+ }
+ .studentstories .col-md-6{
+  margin: 0px 0px 0px 0px;
+ }
+ .SuccessStory .text-center{
+  padding-bottom: 100px;
+ }
+ .SuccessStory .boxhh{
+  padding-top: 40px;
+  margin-bottom: 28px;
+ }
+ .navbar-brand{
+  margin-left: 120px;
+  color: #FE7679;
+}
+.nav-link{
+  color: #FE7679;
+  font-size: large;
+}
+.dropdown-item{
+  color: #FE7679;
+}
+ /* -------STUDENT SUCCESS STORY ENDS HERE------ */
+/* 
+=========================================================================================== */
+ /* -------------footer starts here--------------------- */
+  /* footer  {
+    padding: 20px 0px;
+    width: 100%;
+    color: rgb(223, 83, 32);
+    background-color: #fabbb0;
+    font-weight: 600;
+    height: auto;
+  overflow: hidden;
+    font-size: x-large;
+  }
+footer .container{
+  display: flex;
+}
+
+.footer{
+  padding-top: 50px;
+    border: #fff;
+}
+ .fot{
+  height: 250px !important;
+  width:100% !important;
+ } */
+    
+
+
+
+ footer  {
+  padding: 20px 0;
+  width: 100%;
+  color: rgb(223, 83, 32);
+  background-color: #fabbb0;
+  font-weight: 600;
+}
+footer .container{
+display: flex;
+}
+.footer{
+padding-top: 50px;
+  border: #fff;
+}
+.fot{
+height: 250px !important;
+width:100% !important;
+}
+footer {
+height: auto;
+overflow: hidden;
+}

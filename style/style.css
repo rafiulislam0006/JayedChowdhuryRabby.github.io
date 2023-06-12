@@ -1,0 +1,678 @@
+.btnL {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  border: none;
+  background: none;
+  padding: 0;
+  border-radius: 0%;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding box shadow */
+  transition: box-shadow 0.3s ease; /* Adding transition effect */
+}
+
+.btnL:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btnL-logo {
+  width: 100%;
+  height: auto;
+}
+
+.btnL-logoG {
+  width: 100%;
+  height: auto;
+}
+
+.btnL-text {
+  font-size: 16px;
+}
+
+.containerLogin {
+  max-width: 450px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgb(247, 223, 223);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 30px;
+  overflow: hidden;
+  
+}
+a.w{
+  font-size: small;
+}
+.k{
+  font-size: small;
+  margin-left: 0.9cm;
+  color: #f37090;
+}
+.image-row {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.image {
+  width: 10%;
+  flex: 0 0 auto;
+  margin: 0 13px; /* Optional: Add margin between images */
+}
+.link{
+
+  max-width: 540px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 30px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.containerRecReg{
+  max-width: 540px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 0px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 30px;
+  
+}
+
+  .containerRecReg::-webkit-scrollbar {
+    width: 0em; /* Adjust the width as per your preference */
+    background-color: #f5f5f5; /* Change the background color if needed */
+  }
+
+  .containerRecReg::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* Change the thumb color if needed */
+  }
+
+#scrollingForm {
+  position: fixed;
+  top: 200vh; /* Initially place the form below the viewport */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Limit the maximum width */
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s;
+}
+
+/* Adjust the top position when scrolling reaches a certain point */
+@media screen and (min-width: 768px) {
+  .containerRecReg {
+    padding-top: 30px; /* Offset the fixed form for better visibility */
+  }
+
+  #scrollingForm {
+    top: 50%; /* Adjust this value to position the form correctly */
+    transform: translateY(-50%);
+  }
+}
+.right-div {
+  background-color:  rgb(247, 223, 223); /* Set the desired background color */
+  font-size: 14px; /* Set the desired font size */
+  padding: 0px; /* Add some padding for spacing */
+  text-align: left; /* Align the content to the right */
+  width: 8cm;
+  margin-left: 0cm;
+  padding: 20px;
+}
+.login-image {
+  max-width: 170%;
+  height: auto;
+  
+}
+.imageSt{
+  max-width: 50%;
+  height: auto;
+  margin-top: 2cm;
+  margin-left: 4cm;
+  margin-bottom: 2cm;
+}
+.Re{
+margin: 20px auto;
+padding: 10px 20px;
+border-radius: 25px;
+background-color: rgb(247, 223, 223);
+color: #ec3c10;
+font-size: 10px;
+cursor: pointer;
+border-color: #ec3c10;
+margin-left:1cm;
+border-width:0.1px;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group1 {
+  margin-bottom: 20px;
+}
+
+
+.form-group label {
+  text-align:justify;
+  margin-bottom: 0px;
+  margin-left: 0.8cm;
+  font-size: small;
+}
+.form-group label {
+  text-align:justify;
+  margin-bottom: px;
+  margin-left: 0.3cm;
+  font-size: small;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 83%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 0.9cm;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+.form-group1 input[type="text"],
+.form-group1 input[type="password"] {
+  width: 83%;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 0.9cm;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-group3 input[type="text"],
+.form-group3 input[type="password"] {
+  width: 83%;
+  padding: 50px;
+  border-radius: 5px;
+  margin-left: 0.9cm;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-group.remember-me {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  color: #ff0000;
+  margin-left: 1.1cm;
+}
+
+.form-group.remember-me input[type="checkbox"] {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+}
+.form-group.btn-container {
+  margin-top: 10px;
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+
+.form-group .btn {
+  width: 30%;
+  padding: 10px;
+  color: #fff;
+  background-color: #e95318;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+ 
+}
+.form-group .btn1{
+  width: 35%;
+  padding: 10px;
+  color: #fff;
+  background-color: #e91845;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-group .btn2{
+  width: 40%;
+  padding: 8px;
+  color: #fff;
+  background-color: #d32c50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-group .btn3{
+  width: 20%;
+  padding: 8px;
+  color: #fff;
+  background-color: #d32c50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+
+}
+
+.form-group .btn-container {
+  display: flex;
+  justify-content: center;
+}
+.w{
+    color: #f37090;
+    text-align: center;
+
+}
+.m{
+  color: #cf5117;
+  text-align: center;
+
+}
+.L{
+  color: #000000;
+  text-align:center;
+  font-size: medium;
+
+}
+.sty1{
+  color: #ffffff;
+  text-align:left;
+  font-size: large;
+  margin-left: 4cm;
+  display: inline-block;
+  padding: 3px;
+
+}
+.sty2{
+  color: #ffffff;
+  text-align:left;
+  font-size: large;
+  margin-left: 9cm;
+  display: inline-block;
+  padding: 3px;
+}
+.sty3{
+  color: #ffffff;
+  text-align:left;
+  font-size: large;
+  margin-left: 10cm;
+  display: inline-block;
+  padding: 3px;
+}
+.sty4 {
+  color: #ffffff;
+  text-align: center;
+  font-size: large;
+  margin-left: 3cm;
+  display: flex;
+}
+
+.sty5 {
+  color: #ffffff;
+  text-align: center;
+  font-size: large;
+  margin-left: 7cm;
+  display: flex;
+}
+
+.sty6a {
+  color: #ffffff;
+  text-align: center;
+  font-size: large;
+  margin-left: 7cm;
+  display: flex;
+}
+
+
+.loginsection{
+  padding-top: 200px;
+  padding-bottom: 300px;
+  padding-left: 200px;
+}
+.col-md-5 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-left: 23cm;
+  margin-top: 3cm;
+}
+.col-md-4{
+padding: 0px;
+margin-top: 40px;
+}
+.col-md-4a{
+  padding: 0px;
+  margin-top: 100px;
+  margin-left: 3cm;
+  }
+  .col-md-4b{
+    padding: 0px;
+    margin-top: 100px;
+    margin-left: 15cm;
+    }
+  img {
+    max-width: 80%;
+    height: auto;
+  }
+  .imgB { 
+    max-width: 30%;
+    height: auto;
+    margin-left: 0px;
+  }
+  .imgLogo {
+    max-width: 15%;
+    height: auto;
+  }
+  .imgSto1 {
+    max-width: 5%;
+    height: auto;
+  }
+  .imgSto2{
+    max-width: 5%;
+    height: auto;
+  }
+  .pic{
+   padding: 1cm;
+   
+  justify-content: center;
+  }
+  .imgH1 {
+    max-width: 20%;
+    height: auto;
+    display: flex;
+  }
+  .imgH{
+    max-width: 100%;
+    height: auto;
+    padding: 40px;
+    display: flex;
+
+  }
+  .imgI{
+    max-width: 100%;
+    height: auto;
+   }
+   .imgImpact{
+    max-width: 100%;
+    height: auto;
+   margin-left: 4cm;
+   
+   }
+  
+   .cardH-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the cards */
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  .cardH {
+    flex: 1;
+    padding: 40px;
+    margin-right: 10px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    width: 10px;
+    height: 5cm;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Add box shadow for depth */
+    border-radius: 5px; 
+  }
+  .cardH1 {
+    background-color: #ffffff;
+    padding: 5px;
+  }
+  
+  .cardH2 {
+    background-color: #ffffff;
+    padding: 5px;
+  }
+  
+  .cardH3 {
+    background-color: #ffffff;
+    padding: 5px;
+  }
+  .cardSt {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 1100px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left
+  }
+  .backgroundPic{
+    position: relative;
+    background-image: url(/style/Login/Rectangle\ 66@2x.png);
+    background-size: cover;
+    color: whitesmoke;
+    padding-bottom: 120px;
+    padding-top: 40px;
+  }
+  .sit-on-button {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding for better visual */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: box-shadow 0.3s ease; /* Add a smooth transition on hover */ 
+    /* Additional styles to make it sit on the website */
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .sit-on-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .buttonPink {
+    background-color: #f1097d; /* White background */
+    color: #ffffff; /* Black text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding for better visual */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: box-shadow 0.3s ease; /* Add a smooth transition on hover */ 
+    /* Additional styles to make it sit on the website */
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .black-text {
+    color: black;
+  }
+
+
+*{
+  font-weight: 550;
+}
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+  .col-md-7 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-left: 0cm;
+    margin-bottom:15cm;
+    display:flex;
+  }
+
+
+  
+  .Textsec{
+  padding-bottom: 200px;
+  color: rgb(63, 61, 61);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding-top: 150px;
+
+  }
+ 
+
+  .sec{
+    font-weight: 200;
+  }
+
+
+  .card{
+    border-radius: 25px;
+    width: 250px;
+    height: 29rem;
+  }
+   
+  .stu{
+    font-weight: normal;
+    color: tomato;
+    
+  }
+  .btnH{
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #f165ab;
+    color: #fff;
+    font-size: 16px;
+    border-width: 0px;
+   border-color: #f165ab;
+    display: flex;
+    
+  }
+  .btnPr{
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 0px;
+    background-color: #f1097d;
+    color: #fff;
+    font-size: 16px;
+    border-width: 0px;
+    border-color: #f165ab;
+    box-shadow: #ffffff;
+    display: flex;
+
+    
+  }
+  .btnSt{
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #e45411c0;
+    color: #fff;
+    font-size: 16px;
+    border-width: 0px;
+    border-color: #5a4f55;
+    box-shadow: #ffffff;
+    display: flex;
+
+  }
+ 
+.Rsec{
+  position: relative;
+  background-image: url(/style/student-pg/Path12@2x.png);
+  background-size: cover;
+  color: whitesmoke;
+}
+ 
+.Storysec{
+  position: relative;
+  background-image: url(/style/OurStory/Rectangle\ 74@2x.png);
+  background-size: cover;
+  color: whitesmoke;
+}
+.Blogsec{
+  position: relative;
+  background-image: url(/style/OurStory/Rectangle\ 128@2x.png);
+  background-size: cover;
+  color: whitesmoke;
+}
+
+
+.row1 {
+  display: contents;
+  justify-content: space-between;
+
+  
+}
+
+.image-link {
+  margin-right: 30px;
+}
+.nav2 a {
+  margin-right: 10px; /* Adjust the value as per your preference */
+  color:#FFFFFF;
+  font-size: large;
+}
+.nav2 a:visited {
+  color:#FE7769 /* Change the color to your preference */
+}
+.radio-label {
+  margin-right: 10px; /* Adjust the margin value as needed */
+}
+
+.dropdown-item{
+  color: #FE676A
+
+}
+.navbar-brand{
+  margin-left: 120px;
+  color: #FE7679;
+}
+.nav-link{
+  color: #FE7679;
+  font-size: large;
+}
+/* ========================================== */
+ /* -----------footer starts here----------------- */
+  footer  {
+    padding: 20px 0;
+    width: 100%;
+    color: rgb(223, 83, 32);
+    background-color: #fabbb0;
+    font-weight: 600;
+  }
+footer .container{
+  display: flex;
+}
+.footer{
+  padding-top: 50px;
+    border: #fff;
+}
+ .fot{
+  height: 250px !important;
+  width:100% !important;
+ }
+ footer {
+  height: auto;
+  overflow: hidden;
+}

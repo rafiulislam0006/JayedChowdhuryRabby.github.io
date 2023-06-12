@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Side Navigation Bar</title>  
+    <link rel="stylesheet" href="/style/styleDash.css">
+</head>
+<body>
+    
+    <div class="topnav">
+        <h2 class="logo"><a href="/index.html" style="color: #FE676A;text-decoration: none;"> Logo</a></h2>
+        <div class="user-profile">
+            <img src="/style/application/imgbin-computer-icons-avatar-user-login-avatar-man-wearing-blue-shirt-illustration-mJrXLG07YnZUc2bH5pGfFKUhX-removebg-preview@2x.png" alt="User Image" class="user-image">
+            <span class="username" style="margin-right: 100px;">User</span>
+        </div>
+    </div>
+
+
+        <div class="sidenav">
+            <a href="/adminHomepg.html" class="menu-item">Home</a>
+            <a href="/Program and School.html" class="menu-item">Program and School</a>
+            <a href="/Profile.html" class="menu-item">Profile</a>
+            <a href="/MyApplication.html" class="menu-item">My Application</a>
+            <a href="/adminPaymentPage.html" class="menu-item">Payment</a>
+        </div>
+        
+        <div class="container">
+            <div style="padding-left: 10px;">
+                <table style="border-collapse: collapse;">
+                    <tr>
+                        <th style="padding-left: 25px;"><a href="" style="color:#FE676A">General Information</a></th>
+                        <th style="padding-left: 25px;"><a href="" style="color:#FE676A">Education History</a></th>
+                        <th style="padding-left: 25px;"><a href="" style="color:#FE676A">Test Score</a></th>
+                        <th style="padding-left: 25px;"><a href="" style="color:#FE676A">Background Information</a></th>
+                        <th style="padding-left: 25px;"><a href="" style="color:#FE676A">Upload Documents</a></th>
+                    </tr>
+                </table><br>
+
+                <h3 style="color: #FE676A; padding-left:25px;">Registration Date: October 18th, 2020</h3>
+            </div>
+            <div style="padding-left: 20px;">
+                <div style="padding-left: 20px;">
+                    <div style="background-color: #FEDDDD; padding: 5px; border-radius: 10px; padding-left:10px;">
+                      <h3 style="color: #FE676A;padding-left: 30px;">Personal Information<br><span style="color: #6C6C6C; font-size:smaller;">(As indicated on your passport)</span></h3>
+                      <form style="display: flex; flex-direction: column;padding-left: 30px;">
+                        <div style="display: flex; flex-direction: row;">
+                          <div style="flex: 1;">
+                            <label for="firstName">First Name:</label>
+                            <br>
+                            <input type="text" id="firstName" name="firstName" required>
+                          </div>
+                          <div style="flex: 1;">
+                            <label for="lastName">Last Name:</label>
+                            <br>
+                            <input type="text" id="lastName" name="lastName" required>
+                          </div>
+                          <div style="flex: 1;">
+                            <label for="middleName">Middle Name:</label>
+                            <br>
+                            <input type="text" id="middleName" name="middleName">
+                          </div>
+                        </div><br>
+                        
+                        <div style="display: flex; flex-direction: row;">
+                          <div style="flex: 1;">
+                            <label for="dateOfBirth">Date of Birth:</label>
+                            <br>
+                            <input type="date" id="dateOfBirth" name="dateOfBirth" style="width: 170px;" required>
+                          </div>
+                          <div style="flex: 1;">
+                            <label for="language">First Language:</label>
+                            <br>
+                            <input type="text" id="language" name="language" required>
+                          </div>
+                          <div style="flex: 1;">
+                            <label for="citizenship">Coutry Or Citizenship:</label>
+                            <br>
+                            <input type="text" id="citizenship" name="citizenship" required>
+                          </div>
+                        </div><br>
+
+                        <div style="display: flex; flex-direction: row;">
+                            <div style="flex: 1;">
+                              <label for="passport">Passport Number:</label>
+                              <br>
+                              <input type="number" id="passportNumber" name="passportNumber" required>
+                            </div>
+                            <div style="flex: 1;">
+                                    <label for="gender">Gender:</label>
+                                    <br>
+                                    <input type="radio" id="male" name="gender" value="male" required>
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female" required>
+                                    <label for="female">Female</label>
+                            </div>
+                            <div style="flex: 1;">
+                                <label for="status">Marital Status:</label>
+                                <br>
+                                <input type="radio" id="single" name="status" value="single" required>
+                                <label for="single">Single</label>
+                                <input type="radio" id="married" name="status" value="married" required>
+                                <label for="married">Married</label>
+                          </div>
+                          
+                        </div><br>
+                        <div>
+                            <h3 style="color: #FE676A;">Personal Information</h3>
+                        </div>
+                        <div style="display: flex; flex-direction: row;">
+                            <div style="flex: 1;margin-right: 0px;">
+                              <label for="address">Address:</label>
+                              <br>
+                              <input type="text" id="address" style="width: 100%;width: 500px;" name="address" required>
+                            </div>
+                            <div style="flex: 1; margin-left: 165px;">
+                                <label for="city/town">City/Town:</label>
+                                <br>
+                                <input type="text" id="city/town" name="city/town" required>
+                            </div>
+                        </div><br>
+                            <div style="display: flex; flex-direction: row;">
+                                <div style="flex: 1;">
+                                  <label for="countrys">Country:</label>
+                                  <br>
+                                  <input type="text" id="countrys" name="countrys"  required>
+                                </div>
+                                <div style="flex: 1;margin-right: 20px;">
+                                  <label for="province/state">Province/State:</label>
+                                  <br>
+                                  <input type="text" id="province/state" name="province/state" required>
+                                </div>
+                                <div style="flex: 1;">
+                                  <label for="code">Postal/Zip Code:</label>
+                                  <br>
+                                  <input type="number" id="code" name="code" required>
+                                </div>
+                              </div><br>
+
+                              <div style="display: flex; flex-direction: row;">
+                                <div style="flex: 1;">
+                                  <label for="email">Email:</label>
+                                  <br>
+                                  <input type="text" id="email" name="email" required>
+                                </div>
+                                <div style="flex: 1;margin-right: 345px;">
+                                  <label for="phone">Phone Number:</label>
+                                  <br>
+                                  <input type="number" id="phone" name="phone" required>
+                                </div>
+                              </div><br>
+                      </form>
+                      <div style="padding: 20px;text-align: right;">
+                        <button style="background-color: #FE676A; color: #FFFFFF; padding: 10px 20px; border: none; border-radius: 5px;">Next</button>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  
+       </div>
+        </div>
+        <div style="padding-top: 100px;">
+
+        </div>
+        
+    <footer class="footer">
+        <div class="footer-left">
+            &copy; 2020 - Bee Technology & Research Hub
+        </div>
+        <div class="footer-right">
+          <a href="/privacypolicy.html"><b>Privacy Policy</b></a>
+          <a href="/TermsAndCondition.html">Terms and Conditions</a>
+          <a href="/OurStory.html">About</a>
+          <a href="/Blog.html">Blog</a>
+      </div>
+    </footer>
+</body>
+</html>
+

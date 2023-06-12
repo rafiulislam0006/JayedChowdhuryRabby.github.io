@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ApplyBoard</title>  
+    <link rel="stylesheet" href="/style/styleDash.css">
+</head>
+<body>
+<div class="topnav">
+    <h2 class="logo"><a href="/index.html" style="color: #FE676A;text-decoration: none;">Logo</a></h2>
+    <div class="search-container">
+        <form id="search-form" action="#" method="GET">
+            <input type="text" id="search-input" name="search" placeholder="What would you like to study?">
+            <input type="text" id="search-input" name="search" placeholder="where? e.g. school name or location">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="user-profile">
+        <img src="/style/application/imgbin-computer-icons-avatar-user-login-avatar-man-wearing-blue-shirt-illustration-mJrXLG07YnZUc2bH5pGfFKUhX-removebg-preview@2x.png" alt="User Image" class="user-image">
+        <span class="username" style="margin-right: 100px;">User</span>
+    </div>
+</div>
+<div class="sidenav" style="padding-top: 70px;">
+    <a href="/adminHomepg.html" class="menu-item">Home</a>
+    <a href="/Program and School.html" class="menu-item">Program and School</a>
+    <a href="/Profile.html" class="menu-item">Profile</a>
+    <a href="/MyApplication.html" class="menu-item">My Application</a>
+    <a href="/adminPaymentPage.html" class="menu-item">Payment</a>
+</div>
+
+<div class="row">
+    <div class="container">
+    
+        <div>
+            <div class="left-side-form" style="width: 240px;">
+                <h3 style="color: #35C0CA;">Eligibility</h3>
+                <form style="padding-right: 10px;">
+                    <label for="name">Do you have permit or visa?</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Nationality</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="name">Education Country</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="name">Education Level</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="name">Grading Scheme</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="name">English Exam Type</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <button type="submit">Save And Apply Filters</button>
+
+                </form>
+            </div><br><br>
+
+            <div class="left-side-form">
+                <h3 style="color:#FE676A;">School Filters</h3>
+                <form>
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                    <option value="" selected disabled>Select..</option>
+                    <option value="country1">Country 1</option>
+                    <option value="country2">Country 2</option>
+                    <option value="country3">Country 3</option>
+                    </select><br><br>
+
+                    <label for="province">Province/States</label>
+                    <select id="province" name="country" required>
+                    <option value="" selected disabled>Select..</option>
+                    <option value="province1"> 1</option>
+                    <option value="province2">2</option>
+                    <option value="province3">3</option>
+                    </select><br><br>
+
+                    <label>School Types</label>
+                    <div class="checkbox-row">
+                    <div>
+                        <input type="checkbox" id="university" name="university" value="university">
+                        <label for="university">University</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="college" name="college" value="college">
+                        <label for="college">College</label>
+                    </div>
+                    </div>
+                    <div class="checkbox-row">
+                    <div>
+                        <input type="checkbox" id="englishInstitute" name="englishInstitute" value="englishInstitute">
+                        <label for="englishInstitute">English Institute</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="highSchool" name="highSchool" value="highSchool">
+                        <label for="highSchool">High School</label>
+                    </div>
+                    </div><br>
+
+                    <label for="school">School</label>
+                    <select id="school" name="school" required>
+                    <option value="" selected disabled>Select..</option>
+                    <option value="school">school 1</option>
+                    <option value="school">school 2</option>
+                    <option value="school">school 3</option>
+                    </select><br>
+
+                </form>
+            </div><br><br>
+
+            <div class="left-side-form">
+                <h3 style="color:#FE676A;">Program Filters</h3>
+                <form>
+                    <label for="country">Programs Level</label>
+                    <select id="country" name="country" required>
+                    <option value="" selected disabled>Select..</option>
+                    <option value="country1">Country 1</option>
+                    <option value="country2">Country 2</option>
+                    <option value="country3">Country 3</option>
+                    </select><br>
+
+                    <label for="province">Intakes</label>
+                    <select id="province" name="country" required>
+                    <option value="" selected disabled>Select..</option>
+                    <option value="province1"> 1</option>
+                    <option value="province2">2</option>
+                    <option value="province3">3</option>
+                    </select><br>
+                    <label for="school">Post-Secondary Discipline</label>
+                    <select id="school" name="school" required>
+                    <option value="" selected disabled>Select..</option>
+                    <option value="school">school 1</option>
+                    <option value="school">school 2</option>
+                    <option value="school">school 3</option>
+                    </select><br>
+                    <label for="school">Post-Secondary Sub-Categories</label>
+                    <select id="school" name="school" required>
+                    <option value="" selected disabled>Select..</option>
+                    <option value="school">school 1</option>
+                    <option value="school">school 2</option>
+                    <option value="school">school 3</option>
+                    </select><br>
+                    <div style="font-size: smaller;">
+                        All amounts are listed in the currency charged<br> by
+                        the school. For best results,please specify<br> a 
+                        country of the school.<br>
+                    </div>
+                    <div class="row">
+                        <label for="fees">Tution Fees:</label>
+                        <input type="checkbox" id="livingCost" name="livingCost" style="margin-left: 30px;">
+                        <label for="livingCost" style="font-size: smaller;">Include living costs</label>
+                    </div>
+                    <input type="range" id="fees" name="fees" min="0" max="1000" value="0" oninput="showAppFeesValue(this.value)">
+                    <span id="feesValue">0k</span>
+
+                    <label for="fees">Application Fees:</label>
+                    <input type="range" id="fees" name="fees" min="0" max="5000" value="0" oninput="showFeesValue(this.value)">
+                    <span id="AppfeesValue">0k</span>
+                    <script>
+                        function showAppFeesValue(value) {
+                            const feesValueElement = document.getElementById("feesValue");
+                            feesValueElement.textContent = value + "k";
+                        }
+                        function showFeesValue(value) {
+                            const feesValueElement = document.getElementById("AppfeesValue");
+                            feesValueElement.textContent = value + "k";
+                        }
+                    </script>
+                <div class="row">
+                        <div style="text-align: left;">
+                            <button type="submit1">Clear Filters</button>
+                        </div>
+                            <div style="text-align: right;">
+                            <button type="submit">Apply Filters</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="padding-top: 50px;padding-right: 40px;">
+        <h3 style="padding-left: 80px;">Programs (33000+) <span style="padding-left: 240px;">Schools(440+)</span></h3>
+            <div class="image-row">
+                <div class="image-row">
+                    <div class="image-box" style="padding-top: 2px;padding-bottom: 0px;">
+                        <img src="/style/Program and School/440px-University_Canada_West_Logo-removebg-preview.png" alt="Image 2">
+                    </div>
+                    <div class="image-box" style="padding-left: 70px;padding-right: 90px;padding-top: 0px;padding-bottom: 0px;">
+                        <img src="/style/Program and School/1200px-University-of-manitoba-logo.svg.png" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <div class="image-row">
+                <div class="image-row">
+                    <div class="image-box" style="padding-top: 4px;padding-left: 62px;padding-right: 60px;padding-bottom: 0px;">
+                        <img src="/style/Program and School/download__1_-removebg-preview.png" alt="Image 1" style="width: auto;">
+                    </div>
+                    <div class="image-box" style="padding-top: 0px;padding-left: 37px;padding-right: 40px;padding-bottom: 0px;">
+                        <img src="/style/Program and School/download__3_-removebg-preview.png" alt="Image 2" s style="width: auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="image-row">
+                <div class="image-row">
+                    <div class="image-box" style="padding-top: 15px;padding-left: 118px;padding-right: 118px;padding-bottom: 15px;">
+                        <img src="/style/Program and School/Brocku-logo-screen.png" alt="Image 1" style="width: auto;">
+                    </div>
+                    <div class="image-box" style="padding-top: 19px;padding-left: 88px;padding-right: 88px;padding-bottom:19px;">
+                        <img src="/style/Program and School/logo-University_of_the_Fraser_Valley-2017_09_13_12_50_10.png" alt="Image 2" s style="width: auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="image-row">
+                <div class="image-row">
+                    <div class="image-box" style="padding-top: 25px;padding-left: 62px;padding-right: 62px;padding-bottom: 25px;">
+                        <img src="/style/Program and School/download__4_-removebg-preview.png" alt="Image 1" style="width: auto;">
+                    </div>
+                    <div class="image-box" style="padding-top: 0px;padding-left: 70px;padding-right: 70px;padding-bottom: 0px;">
+                        <img src="/style/Program and School/download__2_-removebg-preview.png" alt="Image 2" s style="width: auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="image-row">
+                <div class="image-row">
+                    <div class="image-box" style="padding-top: 26px;padding-left: 80px;padding-right: 80px;padding-bottom: 27px;">
+                        <img src="/style/Program and School/download__5_-removebg-preview.png" alt="Image 1" style="width: auto;">
+                    </div>
+                    <div class="image-box" style="padding-top: 0px;padding-left: 126px;padding-right: 126px;padding-bottom: 0px;">
+                        <img src="/style/Program and School/graduation-celebration@2x.png" alt="Image 2" s style="width:auto;height: 100px;">
+                    </div>
+                </div>
+            </div>
+            <div class="image-row">
+                <div class="image-row">
+                    <div class="image-box" style="padding-top: 0px;padding-left: 93px;padding-right: 93px;padding-bottom: 0px;">
+                        <img src="/style/Program and School/download-removebg-preview.png" alt="Image 1" style="width: auto;">
+                    </div>
+                    <div class="image-box" style="padding-top: 21px;padding-left: 118px;padding-right: 122px;padding-bottom: 21px;">
+                        <img src="/style/Program and School/LakeheadUniversity-logo-removebg-preview.png" alt="Image 2" s style="width: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-row">
+                <div class="image-row">
+                    <div class="image-box" style="padding-top: 9px;padding-left: 122px;padding-right: 122px;padding-bottom: 9px;">
+                        <img src="/style/Program and School/Kingston_University_London_logo_320-desktop-black.png" alt="Image 1" style="width: auto;">
+                    </div>
+                    <div class="image-box" style="padding-top: 0.5px;padding-left: 88px;padding-right: 95px;padding-bottom: 0.5px;">
+                        <img src="/style/Program and School/twu-removebg-preview.png" alt="Image 2" s style="width: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-row">
+                <div class="image-row">
+                    <div class="image-box" style="padding-top: 9px;padding-left: 42px;padding-right: 42px;padding-bottom: 9px;">
+                        <img src="/style/Program and School/kisspng-university-of-windsor-logo-brand-education-5b65c824028f92.9065565815333970280105-removebg-preview.png" alt="Image 1" style="width: auto;">
+                    </div>
+                    <div class="image-box" style="padding-top: 10px;padding-left: 128px;padding-right: 128px;padding-bottom: 10px;">
+                        <img src="/style/Program and School/University_of_South_Wales_logo_rasberry-removebg-preview.png" alt="Image 2" s style="width: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-row">
+                <div class="image-row">
+                    <div class="image-box" style="padding-top: 13px;padding-left: 101px;padding-right: 101px;padding-bottom: 13px;">
+                        <img src="/style/Program and School/mru_logo-removebg-preview.png" alt="Image 1" style="width: auto;">
+                    </div>
+                    <div class="image-box" style="padding-top: 0px;padding-left: 95px;padding-right: 95px;padding-bottom: 0px;">
+                        <img src="/style/Program and School/picture1.png" alt="Image 2" s style="width: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-row">
+                <div class="image-row">
+                    <div class="image-box" style="padding-top: 0px;padding-left: 43px;padding-right: 43px;padding-bottom: 0px;">
+                        <img src="/style/Program and School/western-university-vector-logo-removebg-preview.png" alt="Image 1" style="width: auto;">
+                    </div>
+                    <div class="image-box" style="padding-top: 31.5px;padding-left: 105px;padding-right: 105px;padding-bottom: 31.5px;">
+                        <img src="/style/Program and School/unnamed.png" alt="Image 2" s style="width: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-row">
+                <div class="image-row">
+                    <div class="image-box" style="padding-top: 24px;padding-left: 80px;padding-right: 80px;padding-bottom: 24px;">
+                        <img src="/style/Program and School/VFS-3.png" alt="Image 1" style="width: auto;">
+                    </div>
+                    <div class="image-box" style="padding-top: 0px;padding-left: 91px;padding-right: 91px;padding-bottom: 0px;">
+                        <img src="/style/Program and School/university-of-saskatchewan-vector-logo-removebg-preview.png" alt="Image 2" s style="width: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-left">
+        &copy; 2020 - Bee Technology & Research Hub
+    </div>
+    <div class="footer-right">
+        <a href="/privacypolicy.html"><b>Privacy Policy</b></a>
+        <a href="/TermsAndCondition.html">Terms and Conditions</a>
+        <a href="/OurStory.html">About</a>
+        <a href="/Blog.html">Blog</a>
+    </div>
+</footer>
+</body>
+</html>

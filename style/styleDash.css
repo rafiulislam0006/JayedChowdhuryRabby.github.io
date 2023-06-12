@@ -1,0 +1,309 @@
+/* My Application*/
+.body {
+    margin: 0;
+}
+
+.date-box {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+     background: #FEE4E2;
+}
+.Appsec{
+    position: relative;
+    background-image: url(/style/application/Rectangle\ 40@2x.png);
+    background-size: cover;
+    color: whitesmoke;
+  }
+  .Appsec2{
+    position: relative;
+    background-image: url(/style/application/Path\ 39@2x.png);
+    background-size: cover;
+    color: whitesmoke;
+  
+  }
+  .profile{
+    position: relative;
+    background-image: url(/style/Profile/Rectangle\ 40@2x.png);
+    background-size: cover;
+  }
+  .container {
+    margin-top: 80px; /* Add a margin to push the content below the topnav */
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-left: 200px; /* Add a left margin to accommodate the width of the sidebar */
+    overflow-y: auto;
+
+}
+
+.Storysec {
+    margin-left: 10px;
+    padding: 16px;
+}
+
+.Storysec p {
+    margin: 0; /* Remove default margin to ensure content is aligned properly */
+}
+  
+
+/*Side Nav */
+.sidenav {
+    width: 200px;
+    height: 450px;
+    background-color: #ffffff; /* sidebar background color */
+    overflow-y: scroll; /* add scroll bar if content exceeds height */
+    position: absolute;
+}
+.sidenav::-webkit-scrollbar {
+    background-color: #FCD0C9;
+}
+
+.sidenav a {
+    display: block;
+    color: #000000; /* link color */
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidenav a.menu-item {
+    background-color: #ffffff; /* background color for menu items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* custom box shadow */
+    /* Add any other styles you want for the menu items */
+    width: 135px;
+}
+
+.sidenav a.menu-item:hover {
+    background-color: #FCD0C9; /* hover color */
+    color: #ffffff; /* hover text color */
+}
+
+.sidenav a:hover {
+    background-color: #FCD0C9; /* hover color */
+}
+/* Top Nav */
+.topnav {
+    background-color: #ffffff; /* top navigation background color */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    margin-left: 150px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    height: 40px;
+    border-radius: 50%;
+    margin-right:0px;
+}
+
+.search-container {
+    margin-left: 20px;
+    margin-top: 0px
+  }
+  
+  #search-form {
+    display: flex;
+  }
+  
+  #search-input {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #FE676A;
+    border-radius: 0px;
+    
+  }
+  #search-input::placeholder {
+    color:#F75842; /* desired placeholder color */
+  }
+  #search-input:focus {
+    outline: none;
+    border-color: #666;
+  }
+  
+  #search-form button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #FE676A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #search-form button:hover {
+    background-color: #FE676A;
+  }
+/*End Top Nav*/
+
+/*Footer */
+.footer {
+    background-color: #FDD8D3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width:auto;
+    height: auto;
+    overflow: visible; /* or "auto" */
+}
+
+.footer-left {
+    color: #F75842;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+}
+
+.footer-right a {
+    color: #F75842;
+    text-decoration: none;
+}
+
+/*End Footer */
+
+.left-side-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+  }
+  
+  .left-side-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+  
+  .left-side-form label {
+    color: #1D2223;
+  }
+  date
+  .left-side-form input[type="text"],
+  .left-side-form input[type="email"],
+  .left-side-form textarea {
+    width: 100%;
+    max-width: 300px; /* Adjust the width as per your preference */
+    padding: 5px;
+    border: 1px solid #FE8D8F;
+    border-radius: 4px;
+  }
+  
+  .left-side-form button[type="submit"] {
+    width: 100%;
+    max-width: 300px; /* Adjust the width as per your preference */
+    padding: 10px;
+    background-color: #FE676A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .left-side-form button[type="submit1"] {
+    width: 100%;
+    max-width: 300px; /* Adjust the width as per your preference */
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #F75842; /* Specify the border style */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+  #country,#province,#school {
+    width: 100%;
+    max-width: 300px; /* Adjust the width as per your preference */
+    padding: 5px;
+    border: 1px solid #FE8D8F;
+    border-radius: 4px;
+  }
+  .checkbox-row {
+    display: flex;
+    gap: 10px;
+  }
+  .row {
+  display: flex;
+  justify-content: space-between;
+}
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.image-box {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.image-box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 4px;
+            border-radius: 5px;
+            background-color: #FE676A;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #FE676A;
+            cursor: pointer;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #FE676A;
+            cursor: pointer;
+        }
+
+        /* Additional styles for the range input track */
+        input[type="range"]::-webkit-slider-runnable-track {
+            background-color: #ddd;
+            height: 2px;
+            border-radius: 5px;
+        }
+
+        input[type="range"]::-moz-range-track {
+            background-color: #ddd;
+            height: 2px;
+            border-radius: 5px;
+        }
