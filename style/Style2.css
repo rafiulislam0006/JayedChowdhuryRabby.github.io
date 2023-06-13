@@ -422,6 +422,9 @@
   padding: 0px 0px;
   margin: 0px;
   font-size: small;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 .partnership .request-board{
   font-size: xx-small;
@@ -513,7 +516,7 @@
 }
 .joinpartner{
   position: relative;
-  background-image: url("/style/Newfolder/Path\ 17@2x.png") ;
+  background-image: url("/style/Teams/Background.png") ;
   background-size:contain;
   color: white;
   padding: 100px 0px;
@@ -541,7 +544,7 @@
 }
 .hlpusedu{
   position: relative;
-  background-image: url("/style/Newfolder/Path\ 17@2x.png");
+  background-image: url("/style/Teams/Background.png");
   background-size: auto;
 }
 .hlpusedu button{

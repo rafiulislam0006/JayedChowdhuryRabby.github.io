@@ -319,7 +319,7 @@ border-width:0.1px;
 }
 .sty4 {
   color: #ffffff;
-  text-align: center;
+  text-align: justify;
   font-size: large;
   margin-left: 3cm;
   display: flex;
@@ -327,19 +327,44 @@ border-width:0.1px;
 
 .sty5 {
   color: #ffffff;
-  text-align: center;
+  text-align: justify;
   font-size: large;
-  margin-left: 7cm;
+  margin-left: 6cm;
   display: flex;
 }
 
 .sty6a {
   color: #ffffff;
-  text-align: center;
+  text-align: justify;
   font-size: large;
   margin-left: 7cm;
-  display: flex;
+  margin-top: 0cm;
 }
+
+.sty4,
+.sty5,
+.sty6a {
+  font-size: 16px; /* Default font size */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .sty4,
+  .sty5,
+  .sty6a {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 480px) {
+  .sty4,
+  .sty5,
+  .sty6a {
+    font-size: 12px; /* Adjust font size for even smaller screens */
+  }
+}
+
 
 
 .loginsection{
