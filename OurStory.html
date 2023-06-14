@@ -4,7 +4,9 @@
   <title>My Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="/style/style.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 </head> 
 <body>
   <header>
@@ -50,20 +52,21 @@
     </nav>
   </header>
   <!-- 1st section -->
-  <section class="Rsec">
+  <section class="Rsec wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
     <div class="container-fluid" style="padding-bottom: 60px;">
-        <div class="row">
-        <div class="col-md-4a">
-            <h2 ><strong>We're ApplyBoard</strong></h2>
-            <p>We empower people around the world to study<br> abroad and access the best education. </p>
-            <button class="buttonPink">View Open Rules</button>
+      <div class="row">
+        <div class="col-md-4a wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
+          <h2><strong>We're ApplyBoard</strong></h2>
+          <p>We empower people around the world to <br>study abroad and access the best education.</p>
+          <button class="buttonPink">View Open Rules</button>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
           <img src="/style/OurStory/team_presentation__monochromatic.png" alt="Image description" style="max-width: 100%; height: auto;margin-left: 150px;">
         </div>
+      </div>
     </div>
-    </div>
-</section>
+  </section>
+  
 <!--Second Section-->
 <section class="" style="padding-top:80px;">
     <div class="col-md-6">
@@ -100,7 +103,7 @@
   </section>
 
   <!--Third Section-->
-  <section class="">
+  <section class="  wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
     <h1 style="color: #f1097d;text-align: center;">What Do We Do?</h1>
     <div class="cardH-container" style="padding-left: 150px; padding-right: 150px; padding-top: 80px;">
         <div class="cardH cardH1" style="height: 470px; margin-right: 60px;padding-top: 80px;">
@@ -124,7 +127,7 @@
     </div><br><br><br>
 </section>
 <!--Fouth Section-->
-<section class="">
+<section class=" wow animate__animated animate__backInLeft" data-wow-duration="1.5s" data-wow-delay=".5s">
     <h2 class="w">Our Values</h2>
   <br><br>
   <div class="cardH-container">
@@ -166,7 +169,7 @@
 <br><br><br><br>
 
 <!--Fifth Section-->
-<section class="">
+<section class=" wow animate__animated animate__backInRight" data-wow-duration="1.5s" data-wow-delay=".5s">
 <div class="image-row">
   <div class="imgImpact">
     <img src="/style/OurStory/fast fact@2x.png" alt="Image">
@@ -175,11 +178,11 @@
 </section>
 
 <!--Sixth section-->
-<section class="">
-<div>
+<section class="  wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+<div class=" wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
   <h2 style="color: #f1097d; text-align: center;">Employees World</h2><br><br>
 </div>
-<div class="image-row">
+<div class="image-row  wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
   <div class="imgImpact">
     <img src="/style/OurStory/386-3866411_pink-world-map-free@2x.png" alt="Image">
   </div>
@@ -288,15 +291,15 @@
 </div><br><br><br>
 </section>
  <!-- 8th section -->
- <section class="">
+ <section class=" wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".5s">
     <div class="container-fluid" style="padding-bottom: 60px;">
         <div class="row">
-        <div class="col-md-4a">
+        <div class="col-md-4a  wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
             <h2 ><strong>Careers</strong></h2>
             <p>We are growing at light speed! Join our awesome<br>team and help us educate the world.</p>
             <button class="buttonPink">View Open Rules</button>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4  wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
           <img src="/style/OurStory/online_lesson_.png" alt="Image description" style="max-width: 100%; height: auto;margin-left: 150px;">
         </div>
     </div>
@@ -367,3 +370,8 @@
   <!-- footer -->
 </body>
 </html>
+
+<script>
+  // Initialize Wow.js
+  new WOW().init();
+</script>

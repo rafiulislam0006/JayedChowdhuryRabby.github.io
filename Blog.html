@@ -4,6 +4,8 @@
   <title>My Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   
 </head> 
 <body>
@@ -51,11 +53,11 @@
   </header>
 <!--First Section-->
 <section>
-    <div class="col-md-6" style="padding-top: 40px;padding-bottom: 40px;" >
+    <div class="col-md-6 wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s" style="padding-top: 40px;padding-bottom: 40px;" >
        <h2 style="color: #F75246;font: 400;font-family: Arial, Helvetica, sans-serif;" ><b>ApplyBoard Blog</b></h2>
     </div>
 </section>
-<section class="Blogsec">
+<section class="Blogsec wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
     <div class="cardH-container">
       <div class="cardH cardH1" style="margin-right: 50px; margin-bottom: 40px; background-color: #FE7769;">
         <div class="cardH-content">
@@ -238,3 +240,7 @@
       <!-- footer -->
     </body>
     </html>
+    <script>
+      // Initialize Wow.js
+      new WOW().init();
+    </script>

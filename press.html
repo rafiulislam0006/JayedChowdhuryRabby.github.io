@@ -4,7 +4,8 @@
   <title>My Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="/style/style.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head> 
 <body>
   <header>
@@ -51,10 +52,10 @@
   </header>
 
   <!--First Section-->
-  <section class="">
+  <section class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".5s">
     <div class="container-fluid">
         <div class="row" style="padding-bottom: 200px; padding-top: 0px;">
-            <div class="col-md-6">
+            <div class="col-md-6 wow animate__animated animate__jackInTheBox" data-wow-duration="1.5s" data-wow-delay=".5s">
               <div class="col-md-6" style="padding-top: 80px;">
                 <h1 style="color: #f1097d; text-align: left;">Our story</h1>
               </div>
@@ -65,7 +66,7 @@
                     <input type="submit" class="btnPr" value="Access Media Kit" style="margin: unset;">
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 wow animate__animated animate__jackInTheBox" data-wow-duration="1.5s" data-wow-delay=".5s">
               <div class="col-md-6">
                 <h1 style="color: #f1097d; text-align: left;">Press Contact</h1>
               </div>
@@ -83,21 +84,21 @@
 
 
   <!---Second section-->
-  <section class="Rsec">
+  <section class="Rsec wow animate__animated animate__backInRight" data-wow-duration="1.5s" data-wow-delay=".5s">
     <div class="col-md-6" style="padding: 100px;text-align: justify;">
         <p>Since ApplyBoard was launced in 2015, we have assisted 120,000+ students apply to educational institutions world widel To accomplish this,we've built partnership with over 1,200 educational Institutinsn and 4,000 recruitment partners. Our headquarters is located in Kitchener,ontario. We employ 550+ team member in 20+ countries.</p>
     </div>
   </section>
 
   <!--third section-->
-  <section class="">
+  <section class="wow animate__animated animate__backInLeft" data-wow-duration="1.5s" data-wow-delay=".5s">
     <div>
         <img src="/style/Login/ApplyBoard-Team-Photo.png" alt="image" class="imgI">
     </div>
   </section><br><br><br>
 
   <!--Fouth Section-->
-  <section class="">
+  <section class="wow animate__animated animate__backInRight" data-wow-duration="1.5s" data-wow-delay=".5s">
     <h1 style="color: #f1097d; margin-left: 150px;">Featured News</h1>
     <div class="cardH-container" style="padding-left: 150px; padding-right: 150px; padding-top: 80px;">
         <div class="cardH cardH1" style="height: 500px; margin-right: 60px;">
@@ -170,7 +171,7 @@
     </div>
 </section>
 <!--Fifth Section-->
-<section class="" style="padding-top: 70px;">
+<section class="wow animate__animated animate__backInLeft" data-wow-duration="1.5s" data-wow-delay=".5s" style="padding-top: 70px;">
     <div class="col-md-6">
         <h1 style="color: #f1097d;">Awards We've Won</h1>
     </div>
@@ -388,3 +389,7 @@
   <!-- footer -->
 </body>
 </html>
+<script>
+  // Initialize Wow.js
+  new WOW().init();
+</script>

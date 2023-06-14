@@ -4,7 +4,8 @@
   <title>My Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="/style/style.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head> 
 <body>
   <header>
@@ -88,11 +89,11 @@
       font-size: 17px;
     }
     </style>
-    <section style="padding-bottom: 100px;padding-top: 50px;">
+    <section style="padding-bottom: 100px;padding-top: 50px;" class="wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
       <div>
         <h2 style="color: #FE7769;text-align: center;padding-bottom: 50px;">Co-Founders</h2>
       </div>
-    <div class="image-row">
+    <div class="image-row ">
       <div class="image-container">
         <img src="/style/Teams/Image 1.png" alt="Image 1">
         <span class="designation">Martin Basiri<br>CEO</span>
@@ -109,7 +110,7 @@
     </section>
 
     <!--2nd Section-->
-    <section class="Blogsec" style="padding-top: 30px;">
+    <section class="Blogsec wow animate__animated animate__jackInTheBox" data-wow-duration="1.5s" data-wow-delay=".5s" style="padding-top: 30px;">
       <div style="text-align: center;">
         <h2 style="color: #FE7769;padding-bottom: 30px;">Leadership Teams</h2>
       </div>
@@ -149,8 +150,8 @@
 
     <!--Thirs sec-->
     <section style="padding-bottom: 100px;padding-top: 50px;">
-    <div class="image-row">
-      <div class="image-container" style="padding-top: 50px;">
+    <div class="image-row wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+      <div class="image-container wow animate__animated animate__jackInTheBox" data-wow-duration="1.5s" data-wow-delay=".5s" style="padding-top: 50px;">
         <img src="/style/Teams/Image 11.png" alt="Image 1" style="height: auto; height: 250px;">
         <span class="designation1"><b>Rt. Hon. Jo Johnson</b><br>Chairman, International</span>
       </div>
@@ -236,3 +237,7 @@
       <!-- footer -->
     </body>
     </html>
+    <script>
+      // Initialize Wow.js
+      new WOW().init();
+    </script>
