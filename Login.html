@@ -4,7 +4,8 @@
   <title>My Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="/style/style.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head> 
 <body>
   <header>
@@ -52,7 +53,7 @@
   <section class="loginsec">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6  wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
           <img src="/style/Newfolder/undraw_true_friends_c-1.png" alt="Image" class="login-image" style="margin-right: 200px">
         </div>
         <div class="col-md-4">
@@ -191,3 +192,8 @@
   <!-- footer -->
 </body>
 </html>
+
+<script>
+  // Initialize Wow.js
+  new WOW().init();
+</script>
