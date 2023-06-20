@@ -319,7 +319,7 @@ border-width:0.1px;
 }
 .sty4 {
   color: #ffffff;
-  text-align: justify;
+  text-align: center;
   font-size: large;
   margin-left: 3cm;
   display: flex;
@@ -327,17 +327,17 @@ border-width:0.1px;
 
 .sty5 {
   color: #ffffff;
-  text-align: justify;
+  text-align: center;
   font-size: large;
-  margin-left: 6cm;
+  margin-left: 7cm;
   display: flex;
 }
 
 .sty6a {
   color: #ffffff;
-  text-align: justify;
+  text-align: center;
   font-size: large;
-  margin-left: 7cm;
+  margin-left: 8cm;
   margin-top: 0cm;
 }
 
@@ -677,6 +677,7 @@ margin-top: 40px;
   color: #FE7679;
   font-size: large;
 }
+
 /* ========================================== */
  /* -----------footer starts here----------------- */
   footer  {

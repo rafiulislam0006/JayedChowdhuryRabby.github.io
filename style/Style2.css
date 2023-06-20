@@ -108,7 +108,7 @@
   .thirdsec .textLeftSide{
     padding-top: 400px;
     padding-bottom: 200px;
-    color: #f9f5f3;
+    color: #4d403b;
   }
   .stu{
     font-weight: normal;
@@ -273,7 +273,7 @@
 /* CSS FOR STEPS Ends here */
 .cads{
   padding: 17px 17px;
-  box-shadow: 0 2px 3px rgb(103, 101, 101);
+  box-shadow: 0 2px 5px rgb(42, 41, 41);
   border-radius: 2px;
   background-color: #fdd3cc
 }
@@ -309,7 +309,7 @@
 }
 .sixsec .box{
   padding: 14px;
-  box-shadow: 2px 3px 3px 0px;
+  box-shadow: 2px 5px 5px 0px;
   height: 400px;
   overflow: hidden;
 }
@@ -369,10 +369,10 @@
   background-image: url("/style/school/Component\ 1\ –\ 1@2x.png");
   background-size: cover;
   color: white;
-  padding: 40px 0px 70px 0px;
+  padding: 70px 0px;
 }
 .herosect .row{
-  padding: 20px 0px 65px 0px;
+  padding: 65px 0px;
 }
 .herosect .text{
   text-align: center;
