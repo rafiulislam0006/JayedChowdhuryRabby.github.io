@@ -10,23 +10,25 @@
     max-width: 50%;
     text-align: center;
     margin: auto;
-
   }
 
   img {
     max-width: 100%;
     height: auto;
   }
-  .firstsec{
+
+  .firstsec {
     padding-bottom: 200px;
     color: rgb(63, 61, 61);
     font-weight: 700;
-
   }
+
   /* for changing herosections sub p short */
-  .herosec{
+  .herosec {
     font-weight: 200;
   }
+  /* for changing herosections sub p short */
+  
   .or{
   margin: 20px auto;
   padding: 10px 20px;
@@ -51,7 +53,7 @@
   
   .container .row {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin: 20px;
     border-radius: 20px;
     box-shadow: 0 2px 10px rgba(119, 0, 0, 0.2);
@@ -59,59 +61,97 @@
     padding-top: 200px;
     padding-left: 150px;
   }
-  .card{
+
+  .card {
     border-radius: 25px;
     width: 250px;
-    height: 29rem;
+    height: auto;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
   }
-  
+
   .card img {
     display: block;
-    margin: 20px auto;
+    margin: 0 auto 20px;
     border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
     object-position: center center;
-    background-color:rgb(246, 144, 140);
+    background-color: rgb(246, 144, 140);
   }
-  
+
   .card h3 {
-    text-align: center;
     margin-top: 15px;
     font-size: 20px;
     color: orangered;
-    font: weight 300px;
+    font-weight: 300;
   }
-  
+
   .card p {
-    text-align: center;
-    margin-top: 10px;
     font-size: 16px;
     color: orangered;
     line-height: 1.5;
     padding: 0 20px;
   }
-  .thirdsec .col-md-6:nth-child(1){
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .container .row {
+      flex-direction: column;
+      padding-top: 100px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  .thirdsec .col-md-6:nth-child(1) {
     padding-top: 200px;
     padding-bottom: 100px;
   }
-  .thirdsec .col-md-6:nth-child(2){
+
+  .thirdsec .col-md-6:nth-child(2) {
     background-image: url(/style/Newfolder/shape2.png);
-    background-size:cover;
-   background-position: center;
-    margin: 0px;
-    padding: 0px;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
   }
-  .thirdsec .textLeftSide{
-    padding-top: 400px;
-    padding-bottom: 200px;
+
+  .thirdsec .textLeftSide {
+    padding-top: 200px;
+    padding-bottom: 100px;
     color: #f9f5f3;
   }
-  .stu{
+
+  .stu {
     font-weight: normal;
     color: tomato;
-    
+  }
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .thirdsec .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .thirdsec .col-md-6:nth-child(1) {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+    .thirdsec .textLeftSide {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
   }
   .btn{
     margin: 20px auto;
@@ -122,39 +162,116 @@
     font-size: 16px;
     
   }
-  .fourthsec{
-    padding: 200px 0px 200px;
+  .fourthsec {
+    padding: 200px 0;
     color: #ec2f84;
   }
-  .fifthsec .textRightSide{
-    padding: 0px 50px;
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .fourthsec .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
   }
-  .fifthsec .col-md-6:nth-child(2){
+  .fifthsec .col-md-6:nth-child(2) {
     background-image: url(/style/Newfolder/Path5@2x.png);
     background-position: center;
     background-size: cover;
     background-position: relative;
-    margin: 0px;
+    margin: 0;
   }
-  .fifthsec .textRightSide{
+
+  .fifthsec .textRightSide {
     margin-top: 200px;
   }
-   .sixthsec{
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .fifthsec .row {
+      flex-direction: column-reverse;
+    }
+
+    .fifthsec .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .fifthsec .textRightSide {
+      margin-top: 20px;
+    }
+  }
+
+   .sixthsec {
     padding-top: 200px;
     padding-bottom: 200px;
     color: #da279e;
-   }
-   .sevensec{
-    background-color:rgb(250, 223, 232);
+  }
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .sixthsec .row {
+      flex-direction: column;
+    }
+
+    .sixthsec .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  .sevensec {
+    background-color: rgb(250, 223, 232);
     padding: 20px;
     text-align: center;
     color: #6b6a6b;
-    
-   }
-   .sevensec .container{
-    margin: 10px black;
+  }
+
+  .sevensec .container {
+    margin: 10px auto;
     padding-top: 10px;
-   }
+  }
+
+  .sevensec .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .sevensec .col {
+    flex: 0 0 20%;
+    max-width: 20%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .sevensec .col img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .sevensec .col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .sevensec .col {
+      flex: 0 0 15%;
+      max-width: 15%;
+    }
+  }
    .eightsec{
     padding: 200px;
     color: #ec2f84;
@@ -685,32 +802,6 @@ body {
 /* 
 =========================================================================================== */
  /* -------------footer starts here--------------------- */
-  /* footer  {
-    padding: 20px 0px;
-    width: 100%;
-    color: rgb(223, 83, 32);
-    background-color: #fabbb0;
-    font-weight: 600;
-    height: auto;
-  overflow: hidden;
-    font-size: x-large;
-  }
-footer .container{
-  display: flex;
-}
-
-.footer{
-  padding-top: 50px;
-    border: #fff;
-}
- .fot{
-  height: 250px !important;
-  width:100% !important;
- } */
-    
-
-
-
  footer  {
   padding: 20px 0;
   width: 100%;
