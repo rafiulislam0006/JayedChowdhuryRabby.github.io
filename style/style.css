@@ -13,12 +13,18 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding box shadow */
   transition: box-shadow 0.3s ease; /* Adding transition effect */
 }
-
+.navbar .navbar-brand {
+  color: red;
+}
+.navbar .nav-link.dropdown-toggle {
+  color: red !important; /* Replace 'red' with the color of your choice */
+}
 .btnL:hover {
   background-color: #ffffff;
-  color: #000000;
 }
-
+.navbar .nav-item .nav-link {
+  color: red; /* Replace 'red' with the color of your choice */
+}
 .btnL-logo {
   width: 100%;
   height: auto;
@@ -509,7 +515,7 @@ margin-top: 40px;
     color: #000000; /* Black text color */
     border: none; /* Remove border */
     border-radius: 4px; /* Rounded corners */
-    padding: 10px 20px; /* Add padding for better visual */
+    padding: 10px 2px; /* Add padding for better visual */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     transition: box-shadow 0.3s ease; /* Add a smooth transition on hover */ 
     /* Additional styles to make it sit on the website */
