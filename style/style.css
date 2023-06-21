@@ -13,13 +13,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding box shadow */
   transition: box-shadow 0.3s ease; /* Adding transition effect */
 }
-.navbar-toggler-icon{
-  background-color: #555050;
-}
-.navbar-toggler{
-  color: #cf5117;
-  background-color: #cf5117;
-}
 
 .btnL:hover {
   background-color: #ffffff;
