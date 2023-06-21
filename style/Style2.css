@@ -2,8 +2,17 @@
 *{
   font-weight: 550;
 }
+.navbar .navbar-brand {
+  color: red;
+}
+.navbar .nav-link.dropdown-toggle {
+  color: red !important; /* Replace 'red' with the color of your choice */
+}
 .navbar navbar-expand-lg navbar-light bg-light{
   width: fit-content ;
+}
+.navbar .nav-item .nav-link {
+  color: red; /* Replace 'red' with the color of your choice */
 }
   .col-md-6 {
     flex: 0 0 50%;
