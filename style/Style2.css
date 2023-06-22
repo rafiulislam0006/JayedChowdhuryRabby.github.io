@@ -159,9 +159,9 @@ img {
   }
 
   .thirdsec .textLeftSide {
-    padding-top: 200px;
+    padding-top: 320px;
     padding-bottom: 100px;
-    color: #f9f5f3;
+    color: #ef3976;
   }
 
   .stu {
@@ -176,6 +176,13 @@ img {
       max-width: 100%;
       text-align: center;
       padding: 20px;
+    }
+    .thirdsec .col-md-6:nth-child(2) {
+      background-image: url(/style/Newfolder/shape2.png);
+      background-size: contain;
+      background-position: center;
+      margin: 0;
+      padding: 0;
     }
 
     .thirdsec .col-md-6:nth-child(1) {
@@ -307,15 +314,23 @@ img {
       max-width: 15%;
     }
   }
-   .eightsec{
-    padding: 200px;
-    color: #ec2f84;
-   }
-   .eightsec .text-center{
-    color: #f32ca0;
-    font-weight: 600;
-   }
-   
+   .eightsec {
+  padding: 100px 20px; /* Adjust the padding as needed */
+  color: #ec2f84;
+}
+
+.eightsec .text-center {
+  color: #f32ca0;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  /* Styles for mobile devices */
+  .eightsec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 /* ---------------css for home page ---------------*/
 
 /*---------------- CSS FOR STUDENT PAGE------------- */
