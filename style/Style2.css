@@ -407,48 +407,88 @@ img {
  
 /* card body css */
 /* CSS FOR STEPS */
-.step1{
-  margin: 100px;
-}
-.step1 .col-md-6{
-  text-align: left;
- }
- .step2{
-  margin: 100px;
- }
- .step2 .col-md-6{
-  text-align: right;
- }
- .step3{
-  margin: 100px;
- }
- .step3 .col-md-6{
-  text-align: left;
- }
- .step4{
-  margin: 100px;
- }
- .step4 .col-md-6{
-  text-align: right;
- }
- .step5{
-  margin: 100px;
- }
- .step5 .col-md-6{
-  text-align: left;
- }
- .steps{
+.steps {
   background-color: #fad3cc;
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 20px;
- }
- .steps h2{
+}
+
+.steps h2 {
   font-size: 45px;
- }
- .head{
+}
+
+.head {
   color: #f32ca0;
- }
+}
+
+.step1,
+.step2,
+.step3,
+.step4,
+.step5 {
+  margin: 100px;
+}
+
+.step1 .col-md-6,
+.step2 .col-md-6,
+.step3 .col-md-6,
+.step4 .col-md-6,
+.step5 .col-md-6 {
+  text-align: left;
+}
+
+.step1 .col-sm-12,
+.step2 .col-sm-12,
+.step3 .col-sm-12,
+.step4 .col-sm-12,
+.step5 .col-sm-12 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .step1,
+  .step2,
+  .step3,
+  .step4,
+  .step5 {
+    margin: 50px;
+  }
+
+  .step1 .col-md-6,
+  .step2 .col-md-6,
+  .step3 .col-md-6,
+  .step4 .col-md-6,
+  .step5 .col-md-6 {
+    text-align: center;
+  }
+
+  .step1 .col-sm-12,
+  .step2 .col-sm-12,
+  .step3 .col-sm-12,
+  .step4 .col-sm-12,
+  .step5 .col-sm-12 {
+    text-align: center;
+  }
+
+  .steps h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .steps h2 {
+    font-size: 25px;
+  }
+
+  .step1,
+  .step2,
+  .step3,
+  .step4,
+  .step5 {
+    margin: 25px;
+  }
+}
 /* CSS FOR STEPS Ends here */
 .cads{
   padding: 17px 17px;
