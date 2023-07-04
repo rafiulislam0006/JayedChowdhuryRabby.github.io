@@ -947,6 +947,7 @@ body {
     width: 50%;
     margin-bottom: 0; /* Remove bottom margin on small devices */
   }
+  footer .container .row
 }
 
 @media (min-width: 992px) {
@@ -956,9 +957,13 @@ body {
 }
 
 @media (max-width: 576px) {
-  .container {
-    flex-direction: column; /* Stack columns vertically */
-    align-items: center; /* Center columns horizontally */
+  footer .container{
+    display: flex;
+    flex-direction: row;
+  }
+  footer .container .row{
+    margin: 0px;
+    padding: 0px;
   }
 
   .col {
