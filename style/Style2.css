@@ -909,25 +909,65 @@ body {
 /* 
 =========================================================================================== */
  /* -------------footer starts here--------------------- */
- footer  {
+ footer {
   padding: 20px 0;
   width: 100%;
   color: rgb(223, 83, 32);
   background-color: #fabbb0;
   font-weight: 600;
+  overflow: hidden;
 }
-footer .container{
-display: flex;
-}
-.footer{
-padding-top: 50px;
+
+.footer {
+  padding-top: 50px;
   border: #fff;
 }
-.fot{
-height: 250px !important;
-width:100% !important;
+
+.fot {
+  height: auto;
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
 }
-footer {
-height: auto;
-overflow: hidden;
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  .col {
+    width: 50%;
+    margin-bottom: 0; /* Remove bottom margin on small devices */
+  }
+  footer .container .row
+}
+
+@media (min-width: 992px) {
+  .col {
+    width: 25%;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .container{
+    display: flex;
+    flex-direction: row;
+  }
+  footer .container .row{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .col {
+    width: 100%;
+    margin-bottom: 20px; /* Reduce bottom margin on mobile devices */
+  }
 }
