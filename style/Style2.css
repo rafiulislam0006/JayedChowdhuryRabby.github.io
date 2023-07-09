@@ -523,6 +523,35 @@ img {
 .fivesec .col-md-6 {
   font-size: 0.67em;
 }
+@media (max-width: 576px) {
+  .fivesec .box {
+    padding: 7px;
+    box-shadow: 2px 5px 5px 0px;
+    height: 450px;
+    overflow: hidden;
+    width:150px;
+  }
+  .fivesec {
+    margin: 0px;
+  }
+  .fivesec .card-body {
+    padding-bottom: 40px;
+  }
+  .fivesec {
+    margin: 0px;
+  }
+  .fivesec .card-body{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    border-radius: 20px;
+    padding: 0px;
+   }
+   .fivesec .col-sm-12{
+    display: flex;
+    justify-content: center;
+   }
+}
 
 .fivesec .box h2 {
   font-size: 1rem;
@@ -629,16 +658,19 @@ img {
   text-align: center;
   margin: 0px;
 }
-.expand{
+/* for 2nd section */
+.expand {
   margin: 75px 20px;
   padding: 40px 0px;
 }
-.expand .container-fluid{
+
+.expand .container-fluid {
   display: flex;
   justify-content: space-around;
   padding: 50px;
 }
-.expand .card{
+
+.expand .card {
   width: 100%;
   height: 124px;
   border-radius: 0px;
@@ -646,22 +678,33 @@ img {
   overflow: hidden;
   box-shadow: 0.5px 4px 4px 0.5px #e196ba;
 }
-.expand .card p{
+
+.expand .card p {
   color: #686768;
 }
-.pink{
+
+.pink {
   color: #ec2f84;
 }
-@media (max-width: 768px) {
-  .card-body p {
-    font-size: 14px;
+
+/* Responsive styles */
+@media only screen and (max-width: 576px) {
+  .expand .container-fluid {
+      flex-wrap: wrap;
+      padding: 10px;
+  }
+
+  .expand .col-md-4 {
+      width: 100%;
+      padding: 5px;
+  }
+
+  .expand .card {
+      height: auto;
+      margin: 10px;
   }
 }
-@media (max-width: 480px) {
-  .card-body p {
-    font-size: 12px;
-  }
-}
+/* Section for benefit */
 .benefit .col-md-7{
   display: flex;
   justify-content: center;
@@ -672,8 +715,18 @@ img {
   padding: 30px;
   overflow: hidden;
 }
+@media only screen and (max-width: 576px) {
+  .benefit p {
+    margin:0px 0px;
+  }
+  .benefit{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }
+}
 .benefit p{
-  margin: 0px 120px;
+  margin: 0px 40px;
 }
 .partnership {
   position: relative;
@@ -721,25 +774,43 @@ img {
   display: flex;
   justify-content: center;
  }
- .seminarwebinar .card-bdy{
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 10px;
-    border-radius: 20px;
-    padding-bottom: 40px;
+ .seminarwebinar .card-bdy {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px;
+  border-radius: 20px;
+  padding-bottom: 40px;
 }
-.seminarwebinar .cads{
+
+.seminarwebinar .cads {
   padding: 25px 250px;
   margin: 0px;
   background-color: palevioletred;
 }
-.seminarwebinar .cads button{
+
+.seminarwebinar .cads button {
   border-radius: 18px;
   padding: 0px 48px;
   border: white;
 }
-.seminarwebinar .cads button a{
+
+.seminarwebinar .cads button a {
   color: #f32ca0;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 576px) {
+  .seminarwebinar .card-bdy {
+      flex-wrap: wrap;
+  }
+
+  .seminarwebinar .cads {
+      padding: 10px;
+  }
+
+  .seminarwebinar .cads button {
+      padding: 0px 30px;
+  }
 }
 .bcmpartnr{
   position: relative;
