@@ -519,23 +519,35 @@ img {
  justify-content: center;
 }
 /* fifth section card Css */
-.fivesec .col-md-3{
+.fivesec .col-md-3,
+.fivesec .col-md-6 {
   font-size: 0.67em;
 }
-.fivesec .box h2{
+
+.fivesec .box h2 {
   font-size: 1rem;
 }
-.fivesec .box{
+
+.fivesec .box {
   padding: 7px;
   box-shadow: 2px 5px 5px 0px;
   height: 450px;
   overflow: hidden;
 }
-.fivesec .card-body{
- padding-bottom: 40px;
+
+.fivesec .card-body {
+  padding-bottom: 40px;
 }
-.fivesec{
+
+.fivesec {
   margin: 40px 0px;
+}
+
+@media (max-width: 767px) {
+  .fivesec .col-sm-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 /* fifth section card css */
 /* Sixth section CSS */
