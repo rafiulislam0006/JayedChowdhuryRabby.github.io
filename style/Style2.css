@@ -855,6 +855,9 @@ img {
   background-size: cover;
   padding: 40px 40px;
 }
+.herosect p{
+  padding: 0px 100px;
+}
 .ourimpact{
   padding: 100px 0px 70px 0px;
 }
@@ -870,6 +873,9 @@ img {
   color: rgb(104, 102, 102);
   padding: 100px 0px;
 }
+.applyboardworks .content p{
+  padding: 0px 100px;
+}
 .joinpartner{
   position: relative;
   background-image: url("/style/Teams/Background.png") ;
@@ -881,22 +887,55 @@ img {
   padding: 100px 0px;
   background-color: #FEEEEF;
 }
-.eventsandweb .content{
+.workwidapply .content p{
+  padding: 0px 100px;
+}
+@media only screen and (max-width: 576px) {
+  .workwidapply{
+    padding: 50px 0px;
+    background-color: #FEEEEF;
+}
+.workwidapply .content p{
+  padding: 0px;
+  text-align: justify;
+}
+.herosect p{
+  padding: 0px 30px;
+  text-align: justify;
+}
+.applyboardworks .content p {
+  padding: 0px;
+}
+}
+.eventsandweb .content {
   text-align: center;
   box-shadow: 0px 5px 5px 0px #FE1970;
   background-color: #FE4388;
   padding: 40px;
 }
-.eventsandweb{
+
+.eventsandweb {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 200px;
 }
-.eventsandweb .content button{
+
+.eventsandweb .content button {
   border-color: #f6e1df;
   border-radius: 15px;
   padding: 0px 10px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 576px) {
+  .eventsandweb {
+      padding: 50px;
+  }
+
+  .eventsandweb .content {
+      padding: 20px;
+  }
 }
 .hlpusedu{
   position: relative;
