@@ -718,6 +718,7 @@ img {
 @media only screen and (max-width: 576px) {
   .benefit p {
     margin:0px 0px;
+    text-align: justify;
   }
   .benefit{
     margin: 0px;
