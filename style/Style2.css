@@ -774,6 +774,13 @@ img {
   display: flex;
   justify-content: center;
  }
+ @media only screen and (max-width: 576px) {
+  .comments .card-body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+   }
+ }
  .seminarwebinar .card-bdy {
   display: flex;
   justify-content: center;
