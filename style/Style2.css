@@ -523,6 +523,35 @@ img {
 .fivesec .col-md-6 {
   font-size: 0.67em;
 }
+@media (max-width: 576px) {
+  .fivesec .box {
+    padding: 7px;
+    box-shadow: 2px 5px 5px 0px;
+    height: 450px;
+    overflow: hidden;
+    width:150px;
+  }
+  .fivesec {
+    margin: 0px;
+  }
+  .fivesec .card-body {
+    padding-bottom: 40px;
+  }
+  .fivesec {
+    margin: 0px;
+  }
+  .fivesec .card-body{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    border-radius: 20px;
+    padding: 0px;
+   }
+   .fivesec .col-sm-12{
+    display: flex;
+    justify-content: center;
+   }
+}
 
 .fivesec .box h2 {
   font-size: 1rem;
