@@ -601,6 +601,16 @@ img {
 .sixsec .box h2{
   font-size: 1rem;
 }
+@media (max-width: 767px) {
+  .sixsec .card-body{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0 20px;
+    border-radius: 20px;
+    padding: 20px;
+   }
+}
+
 /* sixth section css end here */
 /* 7th sections starts here */
 .cardbody .row{
@@ -631,6 +641,30 @@ img {
   color: #414041ed;
   font-size: small;
   text-align: left;
+}
+@media (max-width: 767px) {
+  .cardbody .row{
+   
+    margin: 20px;
+    padding: 10px 0px;
+  }
+  .cardbody .col{
+    padding: 0px;
+  }
+  .cardbody .card{
+   
+    box-shadow: 0px 5px 5px;
+    height: 500px;
+  }
+  .cardbody .card h2{
+    font-size: 1rem;
+    text-align: left;
+    padding: 10px;
+  }
+  .cardbody .card p{
+    
+    text-align: left;
+  }
 }
 /* 7th section starts here */
 .lstsec{
@@ -847,6 +881,16 @@ img {
 .termsofuse p a{
   color: #f32ca0;
 }
+@media only screen and (max-width: 576px) {
+  .termsofuse {
+    padding: 20px;
+    text-align: justify;
+  }
+  .headertermsofuse{
+    padding: 20px ;
+  }
+}
+
 /*--------------------- CSS FOR SCHOOL PAGE------------*/
 /* ----------------------Css For RECRUIT---------- */
 .applyboardworks{
@@ -963,6 +1007,15 @@ body {
   padding-top: 50px   ;
   text-align: justify;
 }
+@media only screen and (max-width: 576px){
+  .termsandcondition{
+    padding: 20px;
+  }
+  .termsandcondition .content{
+    padding-top: 20px   ;
+    text-align: justify;
+  }
+}
 /* terms and condition page ends here */
 
 /* -----  learn how to Web page starts here */
@@ -1008,12 +1061,37 @@ body {
     border: none;
     /* box-shadow: 0px 3px 3px 0px #fffdff; */
   }
+  @media only screen and (max-width: 576px){
+    .howwework{
+      background-size: contain;
+      padding: 20px;
+      background-size: cover;
+      text-align: right;
+    }
+    .fiveSteps {
+      padding: 20px;
+    }
+    .fiveSteps p{
+      padding-right: 0px;
+      text-align: justify;
+    }
+    .bcmrecRutmentPartnr{
+      background-size: cover;
+     padding: 20px;
+    }
+  }
   
 /* -----  learn how to Web page ends here */
 /* Cookie policy page Starts here */
 .cookie-policy{
   padding: 50px 250px 40px 100px;
   text-align: justify;
+ }
+ @media only screen and (max-width: 576px){
+  .cookie-policy{
+    padding: 20px;
+    text-align: justify;
+   }
  }
  /* Cookie policy page Ends here */
 
@@ -1051,6 +1129,29 @@ body {
 }
 .dropdown-item{
   color: #FE7679;
+}
+@media only screen and (max-width: 576px){
+  .SuccessStory{
+    padding: 20px;
+   
+   }
+   .studentstories .col-md-6 .box{
+    margin: 0px;
+    text-align: justify;
+    padding: 10px;
+   }
+   
+   .SuccessStory .text-center{
+    padding-bottom: 20px;
+   }
+   .SuccessStory .boxhh{
+    padding-top: 20px;
+    margin-bottom: 20px;
+   }
+   .navbar-brand{
+    margin-left: 0px;
+    
+  }
 }
  /* -------STUDENT SUCCESS STORY ENDS HERE------ */
 /* 
