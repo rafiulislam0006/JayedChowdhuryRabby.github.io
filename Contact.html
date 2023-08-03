@@ -9,13 +9,13 @@
 </head> 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <a class="navbar-brand" href="/index.html">Logo</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Services
@@ -39,7 +39,6 @@
               <a class="dropdown-item" href="/Contact.html">Contact</a>
             </div>
           </li>
-   
           <li class="nav-item">
             <a class="nav-link" href="/Blog.html">Blog</a>
           </li>
@@ -55,11 +54,12 @@
     <div>
         <h3 style="text-align: center;color: #FE4386;padding-bottom: 30px;">CONTACT US</h3>
     </div>
-    <div class="cardH-container  wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s" style="padding-left: 200px;padding-right: 200px;">
-        <div class="cardH cardH1" style="margin-right: 200px;border-radius: 0px;">
-          <div class="cardH-content">
-            <h2 style="padding-top: 50px;color: #FE4386;">Email:<br>
-                help@email.com</h2>
+    <div class="cardH-container wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s" style="padding-left: 200px; padding-right: 200px;">
+      <div class="cardH cardH1" style="margin-right: 200px; border-radius: 0px;">
+        <div class="cardH-content">
+          <h2 style="padding-top: 50px; color: #FE4386; max-width: 100%; word-wrap: break-word;">Email:<br>
+            help@email.com
+          </h2>
           </div>
         </div>
         <div class="cardH cardH3" style="background-color: #ffffff;border-radius: 0px;">
@@ -115,8 +115,11 @@
         <h3 style="text-align: center;color: #FE4386;">Location</h3>
     </div><br>
     <div class="map-container" style="overflow: hidden;">
-        <iframe src="https://maps.google.com/maps?q=New%20York%20City&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" allowfullscreen style="height:100%;max-width: 100%; width: 1000px;height: 500px; margin-left: 170px;"></iframe><br><br><br>
+      <div class="responsive-map">
+        <iframe src="https://maps.google.com/maps?q=New%20York%20City&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" allowfullscreen></iframe>
+      </div>
     </div>
+    
 
    
 </section>
@@ -191,3 +194,26 @@
   // Initialize Wow.js
   new WOW().init();
 </script>
+<style>
+  .map-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (change this value based on your map aspect ratio) */
+  height: 0;
+  max-width: 100%;
+}
+
+.responsive-map {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.responsive-map iframe {
+  width: 70%;
+  height: 90%;
+}
+
+</style>

@@ -2,31 +2,74 @@
 *{
   font-weight: 550;
 }
+.navbar .navbar-brand {
+  color: red;
+}
+.navbar .nav-link.dropdown-toggle {
+  color: red !important; /* Replace 'red' with the color of your choice */
+}
 .navbar navbar-expand-lg navbar-light bg-light{
   width: fit-content ;
 }
-  .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-    text-align: center;
-    margin: auto;
+.navbar .nav-item .nav-link {
+  color: red; /* Replace 'red' with the color of your choice */
+}
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: center;
+  margin: auto;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.firstsec {
+  padding-bottom: 200px;
+  color: rgb(63, 61, 61);
+  font-weight: 700;
+}
+
+/* for changing herosections sub p short */
+.herosec {
+  font-weight: 200;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Media Queries for responsive styling */
+@media (max-width: 767px) {
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .firstsec {
+    padding-bottom: 100px;
+  }
+  .firstsec .col-md-6:nth-child(2){
+    order: 1;
+  }
+  .firstsec .col-md-6:nth-child(1){
+    order: 2;
   }
 
   img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
-  .firstsec{
-    padding-bottom: 200px;
-    color: rgb(63, 61, 61);
-    font-weight: 700;
+}
 
-  }
   /* for changing herosections sub p short */
-  .herosec{
+  .herosec {
     font-weight: 200;
   }
+  /* for changing herosections sub p short */
+  
   .or{
   margin: 20px auto;
   padding: 10px 20px;
@@ -49,71 +92,114 @@
   }
   <!--card-->
   
-  .container {
+  .container .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 20px;
     border-radius: 20px;
     box-shadow: 0 2px 10px rgba(119, 0, 0, 0.2);
     background-color: #fff;
     padding-top: 200px;
     padding-left: 150px;
-    
-    
   }
-  .card{
+
+  .card {
     border-radius: 25px;
     width: 250px;
-    height: 29rem;
+    height: auto;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
   }
-  
+
   .card img {
     display: block;
-    margin: 20px auto;
+    margin: 0 auto 20px;
     border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
     object-position: center center;
-    background-color:rgb(246, 144, 140);
+    background-color: rgb(246, 144, 140);
   }
-  
+
   .card h3 {
-    text-align: center;
     margin-top: 15px;
     font-size: 20px;
     color: orangered;
-    font: weight 300px;
+    font-weight: 700;
   }
-  
+
   .card p {
-    text-align: center;
-    margin-top: 10px;
     font-size: 16px;
     color: orangered;
     line-height: 1.5;
     padding: 0 20px;
   }
-  .thirdsec .col-md-6:nth-child(1){
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .container .row {
+      flex-direction: column;
+      padding-top: 100px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  .thirdsec .col-md-6:nth-child(1) {
     padding-top: 200px;
     padding-bottom: 100px;
   }
-  .thirdsec .col-md-6:nth-child(2){
+
+  .thirdsec .col-md-6:nth-child(2) {
     background-image: url(/style/Newfolder/shape2.png);
-    background-size:cover;
-   background-position: center;
-    margin: 0px;
-    padding: 0px;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
   }
-  .thirdsec .textLeftSide{
-    padding-top: 400px;
-    padding-bottom: 200px;
-    color: #f9f5f3;
+
+  .thirdsec .textLeftSide {
+    padding-top: 320px;
+    padding-bottom: 100px;
+    color: #ef3976;
   }
-  .stu{
+
+  .stu {
     font-weight: normal;
     color: tomato;
-    
+  }
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .thirdsec .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+    .thirdsec .col-md-6:nth-child(2) {
+      background-image: url(/style/Newfolder/shape2.png);
+      background-size: contain;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .thirdsec .col-md-6:nth-child(1) {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+    .thirdsec .textLeftSide {
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
   }
   .btn{
     margin: 20px auto;
@@ -124,48 +210,144 @@
     font-size: 16px;
     
   }
-  .fourthsec{
-    padding: 200px 0px 200px;
+  .fourthsec {
+    padding: 200px 0;
     color: #ec2f84;
   }
-  .fifthsec .textRightSide{
-    padding: 0px 50px;
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .fourthsec .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
   }
-  .fifthsec .col-md-6:nth-child(2){
+  .fifthsec .col-md-6:nth-child(2) {
     background-image: url(/style/Newfolder/Path5@2x.png);
     background-position: center;
     background-size: cover;
     background-position: relative;
-    margin: 0px;
+    margin: 0;
   }
-  .fifthsec .textRightSide{
+
+  .fifthsec .textRightSide {
     margin-top: 200px;
   }
-   .sixthsec{
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .fifthsec .row {
+      flex-direction: column-reverse;
+    }
+
+    .fifthsec .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .fifthsec .textRightSide {
+      margin-top: 20px;
+    }
+  }
+
+   .sixthsec {
     padding-top: 200px;
     padding-bottom: 200px;
     color: #da279e;
-   }
-   .sevensec{
-    background-color:rgb(250, 223, 232);
+  }
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .sixthsec .row {
+      flex-direction: column;
+    }
+
+    .sixthsec .col-md-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  .sevensec {
+    background-color: rgb(250, 223, 232);
     padding: 20px;
     text-align: center;
     color: #6b6a6b;
-    
-   }
-   .sevensec .container{
-    margin: 10px black;
+  }
+
+  .sevensec .container {
+    margin: 10px auto;
     padding-top: 10px;
-   }
-   .eightsec{
-    padding: 200px;
-    color: #ec2f84;
-   }
-   .eightsec .text-center{
-    color: #f32ca0;
-    font-weight: 600;
-   }
-   
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: baseline;
+  }
+
+  .sevensec .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .sevensec .col {
+    flex: 0 0 20%;
+    max-width: 20%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .sevensec .col img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Media Queries for responsive styling */
+  @media (max-width: 767px) {
+    .sevensec .col {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .sevensec .col {
+      flex: 0 0 15%;
+      max-width: 15%;
+    }
+  }
+   .eightsec {
+  padding: 100px 20px; /* Adjust the padding as needed */
+  color: #ec2f84;
+}
+
+.eightsec .text-center {
+  color: #f32ca0;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  /* Styles for mobile devices */
+  .eightsec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .eightsec .container .row {
+    display: flex;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: row;
+}
+}
 /* ---------------css for home page ---------------*/
 
 /*---------------- CSS FOR STUDENT PAGE------------- */
@@ -174,6 +356,10 @@
   background-image: url(/style/student-pg/Path\ 12@2x.png);
   background-size: cover;
   color: whitesmoke;
+}
+.frstsec p{
+  padding: 0px 150px;
+  text-align: justify;
 }
 .frstsec button{
   padding: 20px 40px 20px 40px;
@@ -190,12 +376,22 @@
     width: calc(50% - 10px); /* Adjust the width and spacing for smaller screens */
     margin-right: 10px;
   }
+  .frstsec p{
+    padding: 0px 0px;
+    text-align: justify;
+    width: fit-content;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .card-body {
     width: 100%; /* Adjust the width for the smallest screens */
     margin-right: 0;
+  }
+  .frstsec p{
+    padding: 0px 0px;
+    text-align: justify;
+    width: fit-content;
   }
 }
 
@@ -228,48 +424,88 @@
  
 /* card body css */
 /* CSS FOR STEPS */
-.step1{
-  margin: 100px;
-}
-.step1 .col-md-6{
-  text-align: left;
- }
- .step2{
-  margin: 100px;
- }
- .step2 .col-md-6{
-  text-align: right;
- }
- .step3{
-  margin: 100px;
- }
- .step3 .col-md-6{
-  text-align: left;
- }
- .step4{
-  margin: 100px;
- }
- .step4 .col-md-6{
-  text-align: right;
- }
- .step5{
-  margin: 100px;
- }
- .step5 .col-md-6{
-  text-align: left;
- }
- .steps{
+.steps {
   background-color: #fad3cc;
   padding-top: 50px;
   padding-bottom: 50px;
-  font-size: 25px;
- }
- .steps h2{
+  font-size: 20px;
+}
+
+.steps h2 {
   font-size: 45px;
- }
- .head{
+}
+
+.head {
   color: #f32ca0;
- }
+}
+
+.step1,
+.step2,
+.step3,
+.step4,
+.step5 {
+  margin: 100px;
+}
+
+.step1 .col-md-6,
+.step2 .col-md-6,
+.step3 .col-md-6,
+.step4 .col-md-6,
+.step5 .col-md-6 {
+  text-align: left;
+}
+
+.step1 .col-sm-12,
+.step2 .col-sm-12,
+.step3 .col-sm-12,
+.step4 .col-sm-12,
+.step5 .col-sm-12 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .step1,
+  .step2,
+  .step3,
+  .step4,
+  .step5 {
+    margin: 50px;
+  }
+
+  .step1 .col-md-6,
+  .step2 .col-md-6,
+  .step3 .col-md-6,
+  .step4 .col-md-6,
+  .step5 .col-md-6 {
+    text-align: center;
+  }
+
+  .step1 .col-sm-12,
+  .step2 .col-sm-12,
+  .step3 .col-sm-12,
+  .step4 .col-sm-12,
+  .step5 .col-sm-12 {
+    text-align: center;
+  }
+
+  .steps h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .steps h2 {
+    font-size: 25px;
+  }
+
+  .step1,
+  .step2,
+  .step3,
+  .step4,
+  .step5 {
+    margin: 25px;
+  }
+}
 /* CSS FOR STEPS Ends here */
 .cads{
   padding: 17px 17px;
@@ -283,23 +519,64 @@
  justify-content: center;
 }
 /* fifth section card Css */
-.fivesec .col-md-3{
+.fivesec .col-md-3,
+.fivesec .col-md-6 {
   font-size: 0.67em;
 }
-.fivesec .box h2{
+@media (max-width: 576px) {
+  .fivesec .box {
+    padding: 7px;
+    box-shadow: 2px 5px 5px 0px;
+    height: 450px;
+    overflow: hidden;
+    width:150px;
+  }
+  .fivesec {
+    margin: 0px;
+  }
+  .fivesec .card-body {
+    padding-bottom: 40px;
+  }
+  .fivesec {
+    margin: 0px;
+  }
+  .fivesec .card-body{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    border-radius: 20px;
+    padding: 0px;
+   }
+   .fivesec .col-sm-12{
+    display: flex;
+    justify-content: center;
+   }
+}
+
+.fivesec .box h2 {
   font-size: 1rem;
 }
-.fivesec .box{
+
+.fivesec .box {
   padding: 7px;
   box-shadow: 2px 5px 5px 0px;
   height: 450px;
   overflow: hidden;
 }
-.fivesec .card-body{
- padding-bottom: 40px;
+
+.fivesec .card-body {
+  padding-bottom: 40px;
 }
-.fivesec{
+
+.fivesec {
   margin: 40px 0px;
+}
+
+@media (max-width: 767px) {
+  .fivesec .col-sm-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
 }
 /* fifth section card css */
 /* Sixth section CSS */
@@ -324,6 +601,16 @@
 .sixsec .box h2{
   font-size: 1rem;
 }
+@media (max-width: 767px) {
+  .sixsec .card-body{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0 20px;
+    border-radius: 20px;
+    padding: 20px;
+   }
+}
+
 /* sixth section css end here */
 /* 7th sections starts here */
 .cardbody .row{
@@ -331,6 +618,8 @@
   align-items: center;
   justify-content: space-around;
   margin: 70px;
+  flex-direction: row;
+  padding: 10px 0px;
 }
 .cardbody .col{
   padding: 0px;
@@ -341,6 +630,7 @@
   border-radius: 0px;
   text-align: left;
   box-shadow: 0px 5px 5px;
+  height: 500px;
 }
 .cardbody .card h2{
   font-size: 1rem;
@@ -351,6 +641,30 @@
   color: #414041ed;
   font-size: small;
   text-align: left;
+}
+@media (max-width: 767px) {
+  .cardbody .row{
+   
+    margin: 20px;
+    padding: 10px 0px;
+  }
+  .cardbody .col{
+    padding: 0px;
+  }
+  .cardbody .card{
+   
+    box-shadow: 0px 5px 5px;
+    height: 500px;
+  }
+  .cardbody .card h2{
+    font-size: 1rem;
+    text-align: left;
+    padding: 10px;
+  }
+  .cardbody .card p{
+    
+    text-align: left;
+  }
 }
 /* 7th section starts here */
 .lstsec{
@@ -378,16 +692,19 @@
   text-align: center;
   margin: 0px;
 }
-.expand{
+/* for 2nd section */
+.expand {
   margin: 75px 20px;
   padding: 40px 0px;
 }
-.expand .container-fluid{
+
+.expand .container-fluid {
   display: flex;
   justify-content: space-around;
   padding: 50px;
 }
-.expand .card{
+
+.expand .card {
   width: 100%;
   height: 124px;
   border-radius: 0px;
@@ -395,22 +712,33 @@
   overflow: hidden;
   box-shadow: 0.5px 4px 4px 0.5px #e196ba;
 }
-.expand .card p{
+
+.expand .card p {
   color: #686768;
 }
-.pink{
+
+.pink {
   color: #ec2f84;
 }
-@media (max-width: 768px) {
-  .card-body p {
-    font-size: 14px;
+
+/* Responsive styles */
+@media only screen and (max-width: 576px) {
+  .expand .container-fluid {
+      flex-wrap: wrap;
+      padding: 10px;
+  }
+
+  .expand .col-md-4 {
+      width: 100%;
+      padding: 5px;
+  }
+
+  .expand .card {
+      height: auto;
+      margin: 10px;
   }
 }
-@media (max-width: 480px) {
-  .card-body p {
-    font-size: 12px;
-  }
-}
+/* Section for benefit */
 .benefit .col-md-7{
   display: flex;
   justify-content: center;
@@ -421,8 +749,19 @@
   padding: 30px;
   overflow: hidden;
 }
+@media only screen and (max-width: 576px) {
+  .benefit p {
+    margin:0px 0px;
+    text-align: justify;
+  }
+  .benefit{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+  }
+}
 .benefit p{
-  margin: 0px 120px;
+  margin: 0px 40px;
 }
 .partnership {
   position: relative;
@@ -470,25 +809,50 @@
   display: flex;
   justify-content: center;
  }
- .seminarwebinar .card-bdy{
+ @media only screen and (max-width: 576px) {
+  .comments .card-body{
+    margin: 0px;
     display: flex;
     justify-content: center;
-    margin: 10px 0 10px;
-    border-radius: 20px;
-    padding-bottom: 40px;
+   }
+ }
+ .seminarwebinar .card-bdy {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 10px;
+  border-radius: 20px;
+  padding-bottom: 40px;
 }
-.seminarwebinar .cads{
+
+.seminarwebinar .cads {
   padding: 25px 250px;
   margin: 0px;
   background-color: palevioletred;
 }
-.seminarwebinar .cads button{
+
+.seminarwebinar .cads button {
   border-radius: 18px;
   padding: 0px 48px;
   border: white;
 }
-.seminarwebinar .cads button a{
+
+.seminarwebinar .cads button a {
   color: #f32ca0;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 576px) {
+  .seminarwebinar .card-bdy {
+      flex-wrap: wrap;
+  }
+
+  .seminarwebinar .cads {
+      padding: 10px;
+  }
+
+  .seminarwebinar .cads button {
+      padding: 0px 30px;
+  }
 }
 .bcmpartnr{
   position: relative;
@@ -517,6 +881,16 @@
 .termsofuse p a{
   color: #f32ca0;
 }
+@media only screen and (max-width: 576px) {
+  .termsofuse {
+    padding: 20px;
+    text-align: justify;
+  }
+  .headertermsofuse{
+    padding: 20px ;
+  }
+}
+
 /*--------------------- CSS FOR SCHOOL PAGE------------*/
 /* ----------------------Css For RECRUIT---------- */
 .applyboardworks{
@@ -524,6 +898,9 @@
   background-image: url("/style/New\ folder/Rectangle 66.png ") ;
   background-size: cover;
   padding: 40px 40px;
+}
+.herosect p{
+  padding: 0px 100px;
 }
 .ourimpact{
   padding: 100px 0px 70px 0px;
@@ -540,6 +917,9 @@
   color: rgb(104, 102, 102);
   padding: 100px 0px;
 }
+.applyboardworks .content p{
+  padding: 0px 100px;
+}
 .joinpartner{
   position: relative;
   background-image: url("/style/Teams/Background.png") ;
@@ -551,22 +931,55 @@
   padding: 100px 0px;
   background-color: #FEEEEF;
 }
-.eventsandweb .content{
+.workwidapply .content p{
+  padding: 0px 100px;
+}
+@media only screen and (max-width: 576px) {
+  .workwidapply{
+    padding: 50px 0px;
+    background-color: #FEEEEF;
+}
+.workwidapply .content p{
+  padding: 0px;
+  text-align: justify;
+}
+.herosect p{
+  padding: 0px 30px;
+  text-align: justify;
+}
+.applyboardworks .content p {
+  padding: 0px;
+}
+}
+.eventsandweb .content {
   text-align: center;
   box-shadow: 0px 5px 5px 0px #FE1970;
   background-color: #FE4388;
   padding: 40px;
 }
-.eventsandweb{
+
+.eventsandweb {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 200px;
 }
-.eventsandweb .content button{
+
+.eventsandweb .content button {
   border-color: #f6e1df;
   border-radius: 15px;
   padding: 0px 10px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 576px) {
+  .eventsandweb {
+      padding: 50px;
+  }
+
+  .eventsandweb .content {
+      padding: 20px;
+  }
 }
 .hlpusedu{
   position: relative;
@@ -593,6 +1006,15 @@ body {
 .termsandcondition .content{
   padding-top: 50px   ;
   text-align: justify;
+}
+@media only screen and (max-width: 576px){
+  .termsandcondition{
+    padding: 20px;
+  }
+  .termsandcondition .content{
+    padding-top: 20px   ;
+    text-align: justify;
+  }
 }
 /* terms and condition page ends here */
 
@@ -639,12 +1061,37 @@ body {
     border: none;
     /* box-shadow: 0px 3px 3px 0px #fffdff; */
   }
+  @media only screen and (max-width: 576px){
+    .howwework{
+      background-size: contain;
+      padding: 20px;
+      background-size: cover;
+      text-align: right;
+    }
+    .fiveSteps {
+      padding: 20px;
+    }
+    .fiveSteps p{
+      padding-right: 0px;
+      text-align: justify;
+    }
+    .bcmrecRutmentPartnr{
+      background-size: cover;
+     padding: 20px;
+    }
+  }
   
 /* -----  learn how to Web page ends here */
 /* Cookie policy page Starts here */
 .cookie-policy{
   padding: 50px 250px 40px 100px;
   text-align: justify;
+ }
+ @media only screen and (max-width: 576px){
+  .cookie-policy{
+    padding: 20px;
+    text-align: justify;
+   }
  }
  /* Cookie policy page Ends here */
 
@@ -683,55 +1130,92 @@ body {
 .dropdown-item{
   color: #FE7679;
 }
+@media only screen and (max-width: 576px){
+  .SuccessStory{
+    padding: 20px;
+   
+   }
+   .studentstories .col-md-6 .box{
+    margin: 0px;
+    text-align: justify;
+    padding: 10px;
+   }
+   
+   .SuccessStory .text-center{
+    padding-bottom: 20px;
+   }
+   .SuccessStory .boxhh{
+    padding-top: 20px;
+    margin-bottom: 20px;
+   }
+   .navbar-brand{
+    margin-left: 0px;
+    
+  }
+}
  /* -------STUDENT SUCCESS STORY ENDS HERE------ */
 /* 
 =========================================================================================== */
  /* -------------footer starts here--------------------- */
-  /* footer  {
-    padding: 20px 0px;
-    width: 100%;
-    color: rgb(223, 83, 32);
-    background-color: #fabbb0;
-    font-weight: 600;
-    height: auto;
-  overflow: hidden;
-    font-size: x-large;
-  }
-footer .container{
-  display: flex;
-}
-
-.footer{
-  padding-top: 50px;
-    border: #fff;
-}
- .fot{
-  height: 250px !important;
-  width:100% !important;
- } */
-    
-
-
-
- footer  {
+ footer {
   padding: 20px 0;
   width: 100%;
   color: rgb(223, 83, 32);
   background-color: #fabbb0;
   font-weight: 600;
+  overflow: hidden;
 }
-footer .container{
-display: flex;
-}
-.footer{
-padding-top: 50px;
+
+.footer {
+  padding-top: 50px;
   border: #fff;
 }
-.fot{
-height: 250px !important;
-width:100% !important;
+
+.fot {
+  height: auto;
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
 }
-footer {
-height: auto;
-overflow: hidden;
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  .col {
+    width: 50%;
+    margin-bottom: 0; /* Remove bottom margin on small devices */
+  }
+
+}
+
+@media (min-width: 992px) {
+  .col {
+    width: 25%;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .container{
+    display: flex;
+    flex-direction: row;
+  }
+  footer .container .row{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .col {
+    width: 100%;
+    margin-bottom: 20px; /* Reduce bottom margin on mobile devices */
+  }
 }

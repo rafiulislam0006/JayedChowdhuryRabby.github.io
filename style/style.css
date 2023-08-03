@@ -13,12 +13,18 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding box shadow */
   transition: box-shadow 0.3s ease; /* Adding transition effect */
 }
-
+.navbar .navbar-brand {
+  color: red;
+}
+.navbar .nav-link.dropdown-toggle {
+  color: red !important; /* Replace 'red' with the color of your choice */
+}
 .btnL:hover {
   background-color: #ffffff;
-  color: #000000;
 }
-
+.navbar .nav-item .nav-link {
+  color: red; /* Replace 'red' with the color of your choice */
+}
 .btnL-logo {
   width: 100%;
   height: auto;
@@ -129,6 +135,10 @@ a.w{
   width: 8cm;
   margin-left: 0cm;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight:bold;
 }
 .login-image {
   max-width: 170%;
@@ -505,7 +515,7 @@ margin-top: 40px;
     color: #000000; /* Black text color */
     border: none; /* Remove border */
     border-radius: 4px; /* Rounded corners */
-    padding: 10px 20px; /* Add padding for better visual */
+    padding: 10px 2px; /* Add padding for better visual */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
     transition: box-shadow 0.3s ease; /* Add a smooth transition on hover */ 
     /* Additional styles to make it sit on the website */
@@ -558,16 +568,15 @@ margin-top: 40px;
   .Textsec{
   padding-bottom: 200px;
   color: rgb(63, 61, 61);
-  font-weight: 700;
+  font-weight: bold;
   display: flex;
   align-items: center;
   padding-top: 150px;
-
   }
  
 
   .sec{
-    font-weight: 200;
+    font-weight: 500;
   }
 
 

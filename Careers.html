@@ -10,13 +10,13 @@
 </head> 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <a class="navbar-brand" href="/index.html">Logo</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Services
@@ -40,7 +40,6 @@
               <a class="dropdown-item" href="/Contact.html">Contact</a>
             </div>
           </li>
-   
           <li class="nav-item">
             <a class="nav-link" href="/Blog.html">Blog</a>
           </li>
@@ -143,9 +142,11 @@
         <div class="sty3">Clubs</div>
           <img src="/style/Login/pictures@2x.png" alt="Image" class="imgI wow animate__animated animate__backInDown" data-wow-duration="1.5s" data-wow-delay=".5s">
         </div>
-        <div class="sty4">Our social comittee<br>plans for social events<br>for staffs. We've gone to<br>wonderland,had<br>picnic,trivia nights,<br>gone bowling,and<br>more</div>
-        <div class="sty5">We belivein giving<br>back.We are proud to <br>support local<br> community and<br>edicational initiatives<br>through fundraising and<br>Voluntering.</div>
-        <div class="sty6a">Employees organize <br> clubs around hobbies <br>they're passionate<br>about,including<br>Running,Coffee,Beer,<br>Books,Language<br>Learning,Crafting,and<br>more!</div>
+        <div class="container">
+          <div class="designation">Our social comittee<br>plans for social events<br>for staffs. We've gone to<br>wonderland,had<br>picnic,trivia nights,<br>gone bowling,and<br>more</div>
+          <div class="designation">We belivein giving<br>back.We are proud to <br>support local<br> community and<br>edicational initiatives<br>through fundraising and<br>Voluntering.</div>
+          <div class="designation">Employees organize <br> clubs around hobbies <br>they're passionate<br>about,including<br>Running,Coffee,Beer,<br>Books,Language<br>Learning,Crafting,and<br>more!</div>
+        </div>
   </div>
   </div>
 </section>
@@ -206,13 +207,13 @@
 <section class="backgroundPic wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
   <div class="container-fluid">
       <div class="row">
-      <div class="col-md-6" style="margin-left:350px; padding: 20px;">
+      <div class="col-md-6" style="margin-left:300px; padding: 20px;">
           <h2 class="w" >Our People</h2>
       </div>
-      <div class="col-md-6" style="margin-left:350px;">
+      <div class="col-md-6" style="margin-left:300px;">
         <p class="L" >See what our team is up to on your life at<br>ApplyBoard account!</p>
     </div>
-    <div class="col-md-6" style="margin-left:350px;">
+    <div class="col-md-6" style="margin-left:300px;">
       <button class="sit-on-button">
         <img src="/style/Login/images.png" alt="imgLogo" class="imgLogo">
         <span>Life at ApplyBoard</span>
@@ -222,7 +223,7 @@
   </div>
 </section>
 
-<!--sixth Section-->
+<!--sixth Section
 <section class="">
   <div class="container">
   <div class="row" style="margin-left: 100px;">
@@ -513,7 +514,7 @@
   </div>
 </section>
 
-  <!-- footer -->
+   -->
   <footer>
     <div class="container">
       <div class="col">
@@ -583,3 +584,23 @@
   // Initialize Wow.js
   new WOW().init();
 </script>
+
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .designation {
+    flex-basis: calc(25.33% - 50px); /* Adjust the percentage and gap as needed */
+    margin-bottom: 15px; /* Adjust the gap between rows as needed */
+  }
+
+  @media (max-width: 768px) {
+    .designation {
+      flex-basis: 100%;
+    }
+  }
+</style>
